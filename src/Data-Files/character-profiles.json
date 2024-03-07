@@ -1,0 +1,125 @@
+[
+    {
+        "id": "",
+        "name": "",
+        "rank": "",
+        "melee": 0,
+        "agility": 0,
+        "resiliance": 0,
+        "vigilance": 0,
+        "ego": 0,
+        "logic": 0,
+        "image": "",
+        "powers": {},
+        "traits": [],
+        "tags": [],
+        "biography": {}
+    },
+    {
+        "id": "doctor-octopus",
+        "name": "Doctor Octopus (Otto Octavius)",
+        "rank": 4,
+        "melee": 4,
+        "agility": 3,
+        "resilience": 3,
+        "vigilance": 2,
+        "ego": 4,
+        "logic": 5,
+        "image": "/img/doc-ock.png",
+        "powers": {
+                "Basic": ["Additional Limb", "Brilliance 2", "Inspiration", "Mighty 2"],
+                "Plasticity": ["Extended Reach 1"],
+                "Spider Powers": ["Spider-Dodge", "Wallcrawling"],
+                "Super Strength": ["Banging Heads", "Crushing Grip", "Clobber", "Jump 1", "Quick Toss"],
+                "Telepathy": ["Machine Telepathy"]
+        },
+        "traits": ["Abrasive", "Combat Reflexes", "Extraordinary Origin", "Inventor", "Scientific Expertise", "Skeptical", "Tech Reliance", "Weird"],
+        "tags": ["Lab Access", "Public Identity", "Villainous"],
+        "biography": {
+                "name": "Otto Octavius",
+                "height": "5'9\"",
+                "weight": "245 lbs.",
+                "gender": "Male",
+                "eyes": "Brown",
+                "hair": "Brown",
+                "size": "Average",
+                "features": "Four Mechanical Arms",
+                "occupation": ["Scientist"],
+                "origin": ["High Tech", "Weird Science"],
+                "teams": "Masters of Evil, Sinister Six",
+                "base": "New York City",
+                "history": "Everything changed for brilliant scientist Otto Octavius after a lab experiment gone wrong drove him mad and left him with mental control of four powerful arms. With these powerful limbs at his disposal, Octavius decided to finance his future research through crime, becoming the super villain Doctor Octopus.\n\nDoc Ock's life has been intertwined with that of his one-time admirer Peter Parker (Spider-Man). Ock has fought Spider-Man countless times, romanced Parker's Aunt May and even become Parker himself for a brief period. As more multiversal variants of Spider-Man appear, more versions of Doc Ock have also manifested themselves.",
+                "personality": "Doctor Octopus is a Grade-A narcissist. He considers his scientific endeavors to be of the greatest importance to humanity, and he is not above robbing, hurting and even killing others in the pursuit of his research."
+        }
+    },
+    {
+        "id": "spider-man",
+        "name": "Spider-Man (Peter Parker)",
+        "rank": 4,
+        "melee": 5,
+        "agility": 7,
+        "resilience": 3,
+        "vigilance": 3,
+        "ego": 0,
+        "logic": 4,
+        "image": "/img/spider-man-peter.png",
+        "powers": {
+                "Basic": ["Brilliance 1", "Combat Trickery", "Evasion", "Inspiration", "Integrity", "Mighty 1", "Wisecracker"],
+                "Spider Powers": ["Jump 1", "Spider-Dodge", "Spider-Sense", "Spider-Strike", "Wallcrawling", "Webcasting", "Webgliding", "Webgrabbing", "Webslinging", "Webtrapping"]
+        },
+        "traits": ["Audience", "Combat Reflexes", ["Connections", "Sources"], "Free Running", "Inventor", "Pundit", "Scientific Expertise", "Weird"],
+        "tags": ["Heroic", ["Obligation", "Aunt May"], "Poor", "Secret Identity"],
+        "biography": {
+                "name": "Peter Parker",
+                "height": "5'10\"",
+                "weight": "170 lbs.",
+                "gender": "Male",
+                "eyes": "Hazel",
+                "hair": "Brown",
+                "size": "Average",
+                "features": "None",
+                "occupation": ["Journalist"],
+                "origin": ["Weird Science"],
+                "teams": "Avengers, Fantastic Four, Spider-Army",
+                "base": "New York City",
+                "history": "Bitten by a radioactive spider when he was in high school, Peter Parker gained a suite of spider-related powers. He exploited them for profit until he let a robber get away who later shot and killed his Uncle Ben in a botched burglary, driving home the lesson \"with great power there must also come great responsibility.\" Since then, Parker has dedicated himself to fighting crime and helping those who have less power than him.\n\nOver the years, Parker has been cloned, discovered one of his costumes was an alien symbiote and learned more about his deep connection to the Spider-Totem. At the same time, he's battled against the most colorful rogues' gallery around. Meanwhile, he's met up with several different variations of Spider-Man hailing from alternate dimensions, including the younger Miles Morales, also known as Spider-Man.",
+                "personality": "Parker is a genius who often lets his sense of responsibility get in the way of taking care of the basics of his life. He's known for his sharp wit and his wisecracking ways, which he often uses to enrage his foes. Despite the problems that often plague his personal life, it's rare that he lets feeling sorry for himself stop him from helping others, especially when he's in costume, webswinging through the city's streets."
+        }
+        
+    },
+    {
+        "id": "spider-man-miles",
+        "name": "Spider-Man (Miles Morales)",
+        "rank": 3,
+        "melee": 3,
+        "agility": 5,
+        "resilience": 3,
+        "vigilance": 2,
+        "ego": 1,
+        "logic": 1,
+        "image": "/img/spider-man-miles.png",
+        "powers": {
+                "Basic": ["Evasion", "Mighty 1"],
+                "Spider Powers": ["Jump 1", "Spider-Dodge", "Spider-Sense", "Spider-Strike", "Venom Blast", "Wallcrawling", "Webcasting", "Webgrabbing", "Webslinging", "Webtrapping"],
+                "Illusion": ["Invisibility"]
+        },
+        "traits": ["Combat Reflexes", "Free Running", "Quick Learner", "Surprising Power", "Weird"],
+        "tags": ["Heroic", ["Mentor", "Peter Parker"], ["Obligation", "School"], "Secret Identity", "Young"],
+        "biography": {
+                "name": "Miles Morales",
+                "height": "5'8\"",
+                "weight": "160 lbs.",
+                "gender": "Male",
+                "eyes": "Brown",
+                "hair": "Black",
+                "size": "Average",
+                "features": "None",
+                "occupation": ["Student"],
+                "origin": ["Weird Science"],
+                "teams": "Champions, Spider-Army",
+                "base": "New York City",
+                "history": "Born in an alternate universe (Earth-1610), high-school student Miles Morales was bitten by a genetically modified spider that granted him amazing spiderlike abilities. After witnessing the death of his universe's Spider-Man (Peter Parker), Morales decided to take on the hero's mantle and become the new Spider-Man.\n\nWhen Morales' universe was destroyed, he managed to escape to the main Marvel Universe (Earth-616), and the Molecule Man integrated Morales' past life and family into his new home, restoring them to life. Today, Morales attends the Brooklyn Visions Academy and adventures alongside the original Spider-Man, the Order of the Web (a team of Spider-Man-related heroes), as well as establishing himself as a hero all his own.",
+                "personality": "Morales is an excellent student and a loyal friend. He remembers little of his old life on Earth-1610, but he is dedicated to making the most of his second chances on Earth-616 with his family. He looks up to Peter Parker as a mentor, but at the same time, he is determined to carve out his own path and become his own kind of hero."
+        }
+    }
+]

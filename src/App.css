@@ -1,0 +1,24 @@
+.character-select {
+    text-align: center;
+    align-content: center;
+}
+
+body {
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-bottom: 1px solid black;
+}
+
+.search-bar {
+    /* padding-left: 60%; */
+  }
+  
+  .header-text {
+    padding-right: 10%;
+    
+  }
