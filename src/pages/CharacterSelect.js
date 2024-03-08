@@ -7,10 +7,10 @@ function CharacterSelect() {
     const renderedResults = characterArray.map((character) => {
         return <CharacterTitleCard character={character} key={character.name} />
     })
-
+    
 
     return <div>
-        <h1 className='subtitle'>Character Select</h1>
+        <h1 className='subtitle page-title' >Character Select</h1>
         <div className='character-select'>{renderedResults}</div>
     </div>
 }
