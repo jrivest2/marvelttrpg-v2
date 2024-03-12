@@ -1,7 +1,10 @@
 .character-select {
-    text-align: center;
-    align-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
 
 body {
     text-align: center;
@@ -17,13 +20,29 @@ body {
 
 .search-bar {
     /* padding-left: 60%; */
-  }
+}
   
-  .header-text {
+.header-text {
     padding-right: 10%;
     
 }
 
 .page-title {
     margin-top: 5%;
+}
+
+section img {
+    border: 15px solid #f14667;
+    ;
+}
+
+
+@media screen and (max-width: 900px) {
+    
+    .character-select {
+        display: block;
+        flex-direction: column;
+    }
+    
+    
 }
