@@ -41,6 +41,7 @@ section img {
     flex-direction: row;
     /* padding-left: 15%; */
     justify-content: center;
+    padding-top: 10px;
 }
 
 .text-box {

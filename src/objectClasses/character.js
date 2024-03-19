@@ -37,5 +37,7 @@ export default class Character {
     else this.focus += value;
    }
 
+   resetHealth() {this.health = this.maxHealth}
+   resetFocus() {this.focus = this.maxFocus}
 
 };

@@ -18,12 +18,12 @@ export default function BasicStats({character}) {
     }
 
     const handleResetHealthClick = () => {
-        character.changeHealth(character.maxHealth)
+        character.resetHealth()
         setHealth(character.health)
     }
 
     const handleResetFocusClick = () => {
-        character.changeFocus(character.maxFocus)
+        character.resetFocus()
         setFocus(character.focus)
     }
 
@@ -36,10 +36,18 @@ export default function BasicStats({character}) {
             <img alt={character.id} src={character.image}/>
             <br />
             <div>Max Health: {character.maxHealth}</div>
-            <div className='stats-input'>Health: {health} + <TextBox onSubmit={handleHealthSubmit} /><button onClick={handleResetHealthClick}>Reset Health</button></div>
+            <div className='stats-input'>
+                Health: {health} + 
+                <TextBox onSubmit={handleHealthSubmit} />
+                <button onClick={handleResetHealthClick}>Reset Health</button>
+            </div>
             <br />
             <div>Max Focus: {character.maxFocus}</div>
-            <div className='stats-input'>Focus: {focus} + <TextBox onSubmit={handleFocusSubmit} /><button onClick={handleResetFocusClick}>Reset Focus</button></div>
+            <div className='stats-input'>
+                Focus: {focus} + 
+                <TextBox onSubmit={handleFocusSubmit} />
+                <button onClick={handleResetFocusClick}>Reset Focus</button>
+            </div>
             </div>
         </section>
     );
