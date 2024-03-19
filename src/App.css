@@ -45,6 +45,7 @@ section img {
 
 .text-box {
     padding-left: 8px;
+    padding-right: 8px;
 }
 
 @media screen and (max-width: 600px) {
