@@ -1,29 +1,34 @@
+import { useState } from "react";
+// import Character from "../../objectClasses/character";
+import TextBox from "../TextBox"
+
 export default function BasicStats({character}) {
-    const name = character.name;
-    const rank = character.rank;
+
+    const [health, setHealth] = useState(character.health);
+    const [focus, setFocus] = useState(character.focus);
     
-    let maxHealth = 0;
-    let maxFocus = 0;
+    const handleHealthSubmit = (value) => {
+        character.changeHealth(parseInt(value))
+        setHealth(character.health)
+    }
 
-    if (character.resilience < 1) maxHealth = 10;
-    else maxHealth = 30 * character.resilience;
-
-    if (character.vigilance < 1) maxFocus = 10;
-    else maxFocus = 30 * character.vigilance;
-
+    const handleFocusSubmit = (value) => {
+        character.changeFocus(parseInt(value))
+        setFocus(character.focus)
+    }
     return (
 
         <section className='hero'>
             <div className='hero-body'>
-            <div>{character.name}</div>
-            <div>Rank: {character.rank}</div>
+            <div className="title">{character.name}</div>
+            <div className="subtitle">Rank: {character.rank}</div>
             <img alt={character.id} src={character.image}/>
             <br />
-            <div>Max Health: {maxHealth}</div>
-            <div>Health: {maxHealth}</div>
+            <div>Max Health: {character.maxHealth}</div>
+            <div className='stats-input'>Health: {health} + <TextBox onSubmit={handleHealthSubmit} /></div>
             <br />
-            <div>Max Focus: {maxFocus}</div>
-            <div>Focus: {maxFocus}</div>
+            <div>Max Focus: {character.maxFocus}</div>
+            <div className='stats-input'>Focus: {focus} + <TextBox onSubmit={handleFocusSubmit} /></div>
             </div>
         </section>
     );

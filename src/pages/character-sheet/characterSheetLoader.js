@@ -7,10 +7,10 @@ function characterSheetLoader({params}) {
         throw new Error('Character ID Must be provided')
     }
 
-    const character = characterFile.filter((loadCharacter) => loadCharacter.id == id)[0];
+    const characterData = characterFile.filter((loadCharacter) => loadCharacter.id == id)[0];
     
     return {
-        character
+        characterData
     }
 }
 

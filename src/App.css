@@ -33,15 +33,26 @@ body {
 
 section img {
     border: 15px solid #f14667;
-    ;
+    justify-content: center;
 }
 
+.stats-input {
+    display: flex;
+    flex-direction: row;
+    /* padding-left: 15%; */
+    justify-content: center;
+}
 
-@media screen and (max-width: 900px) {
+.text-box {
+    padding-left: 8px;
+}
+
+@media screen and (max-width: 600px) {
     
     .character-select {
         display: block;
         flex-direction: column;
+        justify-content: center;
     }
     
     
