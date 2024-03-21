@@ -1,11 +1,15 @@
 import { useState } from "react";
 // import Character from "../../objectClasses/character";
-import TextBox from "../TextBox"
+import TextBox from "../TextBox";
+import { useContext } from 'react';
+import { statsContext } from '../context'
 
 export default function BasicStats({character}) {
 
-    const [health, setHealth] = useState(character.health);
-    const [focus, setFocus] = useState(character.focus);
+    const [health, setHealth, focus, setFocus] = useContext(statsContext);
+    
+    // const [focus, setFocus] = useState(character.focus);
+    // const [health, setHealth] = useState(character.health);
     
     const handleHealthSubmit = (value) => {
         character.changeHealth(parseInt(value))

@@ -1,0 +1,183 @@
+[
+    {
+        "name": "Alien Heritage",
+        "description": "The character—or at least one of their ancestors—is not from Earth. Pick an alien race that they belong to. If they were not raised on Earth, they should consider taking the Outsider occupation.",
+        "restriction": "",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Authority",
+        "description": "The character has a legal authority of some kind. They might be a commissioned officer, privateer, bounty hunter, doctor, firearms dealer, lawyer, pharmacist, police officer, private investigator, mayor, governor and so on. This tag can be selected multiple times if appropriate.",
+        "restriction": "",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Black Market Access",
+        "description": "The character knows how and where they can buy and sell hard-to-find and potentially illegal things.",
+        "restriction": "",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Chaotic",
+        "description": "The character has been affected by the chaos lord Chthon.",
+        "restriction": "",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Enemy",
+        "description": "There's someone out there who has sworn to defeat the character. The enemy is of at least the same rank as the character and is obsessed with bringing them down. This tag can be taken multiple times, but it should be reserved for truly obsessed foes.",
+        "restriction": "",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Extreme Appearance",
+        "description": "The character looks very different than the average person (wherever they happen to be) and cannot easily hide their identity. When this tag appears in origins in this chapter, it may give other useful information, like whether an extreme appearance is common.",
+        "restriction": "",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Headquarters",
+        "description": "The character has a base, cave or lair they can use to recover from wounds, repair or store equipment, work on inventions and so on. The location can be public or secret, and it can be as humble as a toolshed or as elaborate as an underground complex or a Manhattan skyscraper.",
+        "restriction": "",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Heroic",
+        "description": "The character acts heroically. They help people in need, and they do their best not to kill—even with people who might deserve it.",
+        "restriction": "The character cannot also be Villainous.",
+        "integrated-v1": [1, "This tag is integrated with the Karma stat on the website, but the restriction is not integrated."],
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Hounded",
+        "description": "The character is a member of a group of people who are persecuted for simply being themselves.",
+        "restriction": "",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Krakoan",
+        "description": "As a mutant, the character is automatically a citizen of the island-nation of Krakoa and can travel to and from there freely. Also, if they are killed and the Five—a group of powerful mutants—are able to work together, the character can be resurrected into an identical new body with most of their memories intact.\nIf killed in Otherworld, the character can still be resurrected, but they will be changed in unpredictable ways. Just how this might affect the Character is up to the Narrator.",
+        "restriction": "For mutants only.",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Lab Access",
+        "description": "The character either owns or has access to a laboratory filled with the technical equipment, supplies and tools they need for their work. This can be anything from a well-stocked high-school classroom to a forensics lab to an industrial site.",
+        "restriction": "",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Linguist",
+        "description": "The character is fluent in a language other than their native tongue. This tag can be selected multiple times, once for each language.",
+        "restriction": "",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Mentor",
+        "description": "The character knows an older person they can ask for advice, even when it comes to having super-powers. This tag can be selected multiple times.",
+        "restriction": "",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Mysterious",
+        "description": "The character does not entirely understand how or why they have powers. This can prove unsettling and perhaps even dangerous, or they can just take it in stride.",
+        "restriction": "",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Obligation",
+        "description": "The character is responsible to certain people, places or organizations who rely on them. This tag can be selected multiple times, using many different categories. These include family, school, society, sports, work and so on.",
+        "restriction": "",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Poor",
+        "description": "The character has little access to money and struggles to make ends meet. This can cause them all sorts of problems.",
+        "restriction": "",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Powerful",
+        "description": "The character has access to the resources of their entire community in most cases, they must be careful about how they use such resources so that they don't lose that access.",
+        "restriction": "",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Public Identity",
+        "description": "The character's real identity is known to the public. This can it easier for them to ask their friends and family—and even strangers—for help. Unfortunately, it also makes it easier for enemies to find them and even to threaten those same friends and family.",
+        "restriction": "",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Rich",
+        "description": "The character has access to plenty of money. If they want something normally and legally available to people, they can simply buy it.",
+        "restriction": "",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Secret Identity",
+        "description": "The Character's real identity is a secret to the public and they must take precautions to maintain this status. This might help keep the people they care about safe from their enemies, but it can also cause strain in those same relationships.",
+        "restriction": "",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Signature Weapon",
+        "description": "The character is known for owning and using a specific type of weapon, like Hawkeye's bow or Elektra's sai.\nThis tag can be taken more than once, but each time must be with a different weapon.",
+        "restriction": "",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Sorcerous",
+        "description": "The character has dedicated themself to the study of traditional magic, also known as sorcery.",
+        "restriction": "",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Streetwise",
+        "description": "The character knows how things are handled on the street, who's in charge of various criminal enterprises and how to avoid issues with them.",
+        "restriction": "",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Supernatural",
+        "description": "The character has powers that are magical or based on something magical.",
+        "restriction": "",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Villainous",
+        "description": "The character is a villain, someone who cares little for the rights of others, up to and including their right to live.",
+        "restriction": "The character cannot also be Heroic.",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Vision Issues",
+        "description": "The character has trouble seeing that can range from partial to full blindness. This can also include color blindness, astigmatisms and being nearsighted or farsighted.",
+        "restriction": "",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Worshipped",
+        "description": "The character is worshipped by others as a god.",
+        "restriction": "",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "X-Gene",
+        "description": "The character has mutant genes that cause them to develop super powers.",
+        "restriction": "For mutants only.",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "Young",
+        "description": "The character is a minor, under 18 years old. If possible, they must report in to their parents or guardians on a regular basis.",
+        "restriction": "",
+        "integrated": [0, ""]
+    },
+    {
+        "name": "",
+        "description": "",
+        "restriction": "",
+        "integrated": []
+    }
+]

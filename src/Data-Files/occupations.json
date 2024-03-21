@@ -1,0 +1,86 @@
+[
+    {
+        "name": "Adventurer",
+        "description": "The character focuses on having adventures. Perhaps they're independently wealthy and don't need another occupation, or maybe they hire out their services.",
+        "examples": "Iron Fist (Danny Rand), Luke Cage, Hawkeye (Kate Bishop)",
+        "tags": ["Black Market Access"],
+        "traits": ["Fearless", ["Connections", "Super Heroes or Super Villains"]]
+    },
+    {
+        "name": "Criminal",
+        "description": "The character did something that put them on the wrong side of the law. They might have spent time in jail for their crimes, or they might have gotten away with them scot-free. The fact that they break the law doesn't necessarily make them a bad person, but law enforcers usually don't care about such distinctions.\nIf they are currently wanted by the law for their crimes, they should also take the Hunted tag. If they have served time, they should take the Convict tag too.",
+        "examples": "Ant-Man (Scott Lang), Black Cat, Gambit.",
+        "tags": ["Black Market Access", "Streetwise"],
+        "traits": [["Connections", "Criminal"]]
+    },
+    {
+        "name": "Health Care Worker",
+        "description": "The character is a doctor, nurse, therapist or other person dedicated to helping heal others. They likely have access to an office where they practice their craft.",
+        "examples": "Doc Samson, Doctor Strange, the Night Nurse (Linda Carter), Thor (Jane Foster)",
+        "tags": [],
+        "traits": ["Clinician", "First Aid"]
+    },
+    {
+        "name": "Journalist",
+        "description": "The character works as a reporter or editor for a news organization. This can range anywhere from the Daily Bugle to TNM (Threats and Menaces). It can also include any sort of reporting, whether TV, radio, newspaper or online.",
+        "examples": "Silk, Spider-Man (Peter Parker), Venom (Eddie Brock).",
+        "tags": [],
+        "traits": ["Audience", ["Connections", "Sources"], "Pundit"]
+    },
+    {
+        "name": "Leader",
+        "description": "The character is the leader of a city, region, state or nation. This includes things like being the elected mayor of New York City or the hereditary king of a country.",
+        "examples": "Black Bolt, Black Panther (T'Challa), Doctor Doom, Sub-Mariner (Namor), Thor (Odinson)",
+        "tags": ["Authority", "Powerful"],
+        "traits": ["Presence"]
+    },
+    {
+        "name": "Military",
+        "description": "The character serves (or at least once served) in a military organization and relies on that training. They can sometimes call on their fellow soldiers for help. They may have worked for a nation or possibly as part of a mercenary outfit.\nIf they are on active duty, their time is often not their own, and they should take the tag \"Obligation: Duty\".",
+        "examples": "Captain America (Steve Rogers), Captain Marvel (Carol Danvers), War Machine, Wolverine (Logan).",
+        "tags": [],
+        "traits": ["Battle Ready", ["Connections", "Military"], "Situational Awareness"]
+    },
+    {
+        "name": "Outsider",
+        "description": "The character comes from another planet, dimension or time and is not familiar with how things work on this Earth. They may have had another occupation back where they came from, but it's not generally applicable here.",
+        "examples": "Groot, Rocket Raccoon, Thor (Odinson)",
+        "tags": [],
+        "traits": [["Connections", "Outsiders"], "Fresh Eyes", "Stranger"]
+    },
+    {
+        "name": "Scientist",
+        "description": "The character solves problems by means of scientific research. They are often among the smartest people in the world, and other heroes turn to them for their expertise.",
+        "examples": "Doctor Octopus (Otto Octavius), Hulk (Bruce Banner), Mister Fantastic, Moon Girl.",
+        "tags": ["Lab Access"],
+        "traits": ["Inventor", "Scientific Expertise"]
+    },
+    {
+        "name": "Spy",
+        "description": "The character is an expert in espionage. They served as a spy for a nation or corporation and know how to find things out about people and organizations.",
+        "examples": "Black Widow (Natasha Romanoff), Peggy Carter, Winter Soldier",
+        "tags": ["Black Market Access"],
+        "traits": [["Connections", "Espionage"], "Leverage"]
+    },
+    {
+        "name": "Student",
+        "description": "The character attends school or college on a full-time basis. What they study or focus on is up to them and their school.\nMost people start out with this occupation, but once they graduate, they move on to something new. If that happens with your character, you can then select a new occupation to replace this one.",
+        "examples": "Moon Girl, Ms. Marvel (Kamala Khan), Spider-Man (Miles Morales).",
+        "tags": ["Mentor", ["Obligation", "School"]],
+        "traits": ["Quick Learner"]
+    },
+    {
+        "name": "Tycoon",
+        "description": "The character is wildly wealthy and well-known. They want for nothing, and they make a splash wherever they go. They get invited to the best parties and let into all the VIP sections.",
+        "examples": "Iron Man (Tony Stark), Iron Monger (Obadiah Stane), Mandarin, Sunspot, Wasp (Janet Van Dyne)",
+        "tags": ["Rich"],
+        "traits": [["Connections", "Celebrities"], "Famous"]
+    },
+    {
+        "name": "",
+        "description": "",
+        "examples": "",
+        "tags": [],
+        "traits": []
+    }
+]

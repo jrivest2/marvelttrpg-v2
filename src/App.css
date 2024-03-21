@@ -5,6 +5,10 @@
     justify-content: center;
 }
 
+figure img {
+    justify-content: center;
+    align-self: center;
+}
 
 body {
     text-align: center;
@@ -34,11 +38,13 @@ body {
 section img {
     border: 15px solid #f14667;
     justify-content: center;
+    margin-bottom: 10px;
 }
 
 .stats-input {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     /* padding-left: 15%; */
     justify-content: center;
     padding-top: 10px;
