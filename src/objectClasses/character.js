@@ -55,6 +55,7 @@ export default class Character {
    setKarma(value) {
     if (this.karma + value >= 0) this.karma += value;
    }
+   resetKarma() {this.karma = this.hasTag("Heroic") ? this.rank : 0}
 
    getSetNames() {
     return this.powerSets.map((powerSet)  => {

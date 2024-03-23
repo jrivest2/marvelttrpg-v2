@@ -46,6 +46,12 @@ export default function BasicStats() {
         setCharacter(newChar)
     }
 
+    const handleKarmaResetClick = () => {
+        let newChar = new Character(character.getData())
+        newChar.resetKarma()
+        setCharacter(newChar)
+    }
+
     return (
 
         <section className='hero'>
@@ -68,7 +74,8 @@ export default function BasicStats() {
                 <button onClick={handleResetFocusClick}>Reset Focus</button>
             </div>
             <br />
-            <div>Karma: <button onClick={handleKarmaMinusClick}>-</button> {character.karma} <button onClick={handleKarmaPlusClick}>+</button></div>
+            <div>Karma: <button onClick={handleKarmaMinusClick}>-</button> {character.karma} <button onClick={handleKarmaPlusClick}>+</button> <button onClick={handleKarmaResetClick} style={{"marginLeft": "15px"}}>Reset Karma</button></div>
+            
             </div>
         </section>
     );

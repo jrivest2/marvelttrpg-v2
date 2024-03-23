@@ -8,10 +8,7 @@ import { statsContext } from '../../components/context';
 function CharacterSheet() {
     const { characterData } = useLoaderData();
     const [character, setCharacter] = useState(new Character(characterData));
-    // let character = new Character(characterData);
-    const [health, setHealth] = useState(character.health);
-    const [focus, setFocus] = useState(character.focus);    
-
+  
     const contextVals = [
         character,
         setCharacter
