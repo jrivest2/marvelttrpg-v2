@@ -1,34 +1,49 @@
 import { useState } from "react";
-// import Character from "../../objectClasses/character";
+import Character from "../../objectClasses/character";
 import TextBox from "../TextBox";
 import { useContext } from 'react';
 import { statsContext } from '../context'
 
-export default function BasicStats({character}) {
+export default function BasicStats() {
 
-    const [health, setHealth, focus, setFocus] = useContext(statsContext);
-    
-    // const [focus, setFocus] = useState(character.focus);
-    // const [health, setHealth] = useState(character.health);
-    
+    const [character, setCharacter] = useContext(statsContext);
+
+
     const handleHealthSubmit = (value) => {
-        character.changeHealth(parseInt(value))
-        setHealth(character.health)
+        let newChar = new Character(character.getData())
+        newChar.changeHealth(parseInt(value))
+        setCharacter(newChar)
     }
-
+    
     const handleFocusSubmit = (value) => {
-        character.changeFocus(parseInt(value))
-        setFocus(character.focus)
+        let newChar = new Character(character.getData())
+        newChar.changeFocus(parseInt(value))
+        setCharacter(newChar)
     }
 
     const handleResetHealthClick = () => {
-        character.resetHealth()
-        setHealth(character.health)
+        let newChar = new Character(character.getData())
+        newChar.resetHealth()
+        setCharacter(newChar)
+
     }
 
     const handleResetFocusClick = () => {
-        character.resetFocus()
-        setFocus(character.focus)
+        let newChar = new Character(character.getData())
+        newChar.resetFocus()
+        setCharacter(newChar)
+    }
+
+    const handleKarmaMinusClick = () => {
+        let newChar = new Character(character.getData())
+        newChar.setKarma(-1)
+        setCharacter(newChar)
+    }
+
+    const handleKarmaPlusClick = () => {
+        let newChar = new Character(character.getData())
+        newChar.setKarma(1)
+        setCharacter(newChar)
     }
 
     return (
@@ -41,17 +56,19 @@ export default function BasicStats({character}) {
             <br />
             <div>Max Health: {character.maxHealth}</div>
             <div className='stats-input'>
-                Health: {health} + 
+                Health: {character.health} + 
                 <TextBox onSubmit={handleHealthSubmit} />
                 <button onClick={handleResetHealthClick}>Reset Health</button>
             </div>
             <br />
             <div>Max Focus: {character.maxFocus}</div>
             <div className='stats-input'>
-                Focus: {focus} + 
+                Focus: {character.focus} + 
                 <TextBox onSubmit={handleFocusSubmit} />
                 <button onClick={handleResetFocusClick}>Reset Focus</button>
             </div>
+            <br />
+            <div>Karma: <button onClick={handleKarmaMinusClick}>-</button> {character.karma} <button onClick={handleKarmaPlusClick}>+</button></div>
             </div>
         </section>
     );
