@@ -13,7 +13,6 @@ function CharacterSheet() {
         character,
         setCharacter
     ]
-
     
     return <div>
         <statsContext.Provider value={contextVals}>
