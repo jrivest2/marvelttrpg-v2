@@ -23,15 +23,12 @@ export default class Character {
         this.traits = characterData.hasClassObjects ? characterData.traits : characterData.traits.map((trait) => {return new Trait(trait)})
         this.tags = characterData.hasClassObjects ? characterData.tags : characterData.tags.map((tag) => {return new Tag(tag)})
         this.biography = characterData.biography;
-
-        //Generated Stats
-        this.maxHealth = characterData.resilience < 1 ? 10 : 30 * characterData.resilience;
-        this.maxFocus = characterData.vigilance < 1 ? 10 : 30 * characterData.vigilance;        
-        this.health = characterData.health ? characterData.health : this.maxHealth;
-        this.focus = characterData.focus ? characterData.focus : this.maxFocus;
         this.occupation = characterData.biography.occupation.map((occupation) => {return new Occupation(occupation)})
         this.origin = characterData.biography.origin.map((origin) => {return new Origin(origin)})
-        this.karma = characterData.hasClassObjects ? characterData.karma : (this.hasTag("Heroic") ? this.rank : 0);
+
+        //Generated Stats
+        this.generateBasicStats(characterData)
+        this.generateAbilityScores(characterData)
     };
 
    changeHealth(value) {
@@ -39,7 +36,6 @@ export default class Character {
     else if (this.health + value < -this.maxHealth) this.health = -this.maxHealth;
     else if (this.health + value > this.maxHealth) this.health = this.maxHealth;
     else this.health += value;
-    // console.log(this.health)
    }
 
    changeFocus(value) {
@@ -69,6 +65,59 @@ export default class Character {
     return true
    }
 
+
+   generateBasicStats(characterData) {
+    if (characterData.hasClassObjects) {
+        this.maxHealth = characterData.maxHealth;
+        this.maxFocus = characterData.maxFocus;
+        this.health = characterData.health;
+        this.focus = characterData.focus;
+        this.karma = characterData.karma
+    } else {
+        this.maxHealth = characterData.resilience < 1 ? 10 : 30 * characterData.resilience;
+        this.maxFocus = characterData.vigilance < 1 ? 10 : 30 * characterData.vigilance;        
+        this.health = this.maxHealth;
+        this.focus = this.maxFocus;
+        this.karma = this.hasTag("Heroic") ? this.rank : 0;
+    }
+    
+   }
+
+   generateAbilityScores(characterData) {
+    if (characterData.hasClassObjects) {
+        this.mDefense = characterData.mDefense;
+        this.aDefense = characterData.aDefense;
+        this.rDefense = characterData.rDefense;
+        this.vDefense = characterData.vDefense;
+        this.eDefense = characterData.eDefense;
+        this.lDefense = characterData.lDefense;
+
+        this.mNonCombat = characterData.mNonCombat;
+        this.aNonCombat = characterData.aNonCombat;
+        this.rNonCombat = characterData.rNonCombat;
+        this.vNonCombat = characterData.vNonCombat;
+        this.eNonCombat = characterData.eNonCombat;
+        this.lNonCombat = characterData.lNonCombat;
+    }
+    else {
+        this.mDefense = this.melee + 10;
+        this.aDefense = this.agility + 10;
+        this.rDefense = this.resilience + 10;
+        this.vDefense = this.vigilance + 10;
+        this.eDefense = this.ego + 10;
+        this.lDefense = this.logic + 10;
+
+        this.mNonCombat = this.melee;
+        this.aNonCombat = this.agility;
+        this.rNonCombat = this.resilience;
+        this.vNonCombat = this.vigilance;
+        this.eNonCombat = this.ego;
+        this.lNonCombat = this.logic;
+
+        //Check for powers/traits/tags that may effect these scores.
+    }
+   }
+
    getData() {
     return {
         id: this.id,
@@ -85,7 +134,9 @@ export default class Character {
         traits: this.traits,
         tags: this.tags,
         biography: this.biography,
+        maxHealth: this.maxHealth,
         health: this.health,
+        maxFocus: this.maxFocus,
         focus: this.focus,
         karma: this.karma,
         hasClassObjects: true

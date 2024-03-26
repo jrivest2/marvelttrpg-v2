@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Character from "../../objectClasses/character";
 import TextBox from "../TextBox";
 import { useContext } from 'react';
@@ -56,25 +55,25 @@ export default function BasicStats() {
 
         <section className='hero'>
             <div className='hero-body'>
-            <div className="title">{character.name}</div>
-            <div className="subtitle">Rank: {character.rank}</div>
-            <img alt={character.id} src={character.image}/>
-            <br />
-            <div>Max Health: {character.maxHealth}</div>
-            <div className='stats-input'>
-                Health: {character.health} + 
-                <TextBox onSubmit={handleHealthSubmit} />
-                <button onClick={handleResetHealthClick}>Reset Health</button>
-            </div>
-            <br />
-            <div>Max Focus: {character.maxFocus}</div>
-            <div className='stats-input'>
-                Focus: {character.focus} + 
-                <TextBox onSubmit={handleFocusSubmit} />
-                <button onClick={handleResetFocusClick}>Reset Focus</button>
-            </div>
-            <br />
-            <div>Karma: <button onClick={handleKarmaMinusClick}>-</button> {character.karma} <button onClick={handleKarmaPlusClick}>+</button> <button onClick={handleKarmaResetClick} style={{"marginLeft": "15px"}}>Reset Karma</button></div>
+                <div className="title">{character.name}</div>
+                <div className="subtitle">Rank: {character.rank}</div>
+                <img alt={character.id} src={character.image}/>
+                <br />
+                <div>Max Health: {character.maxHealth}</div>
+                <div className='stats-input'>
+                    Health: {character.health} + 
+                    <TextBox onSubmit={handleHealthSubmit} />
+                    <button onClick={handleResetHealthClick}>Reset Health</button>
+                </div>
+                <br />
+                <div>Max Focus: {character.maxFocus}</div>
+                <div className='stats-input'>
+                    Focus: {character.focus} + 
+                    <TextBox onSubmit={handleFocusSubmit} />
+                    <button onClick={handleResetFocusClick}>Reset Focus</button>
+                </div>
+                <br />
+                <div>Karma: <button onClick={handleKarmaMinusClick}>-</button> {character.karma} <button onClick={handleKarmaPlusClick}>+</button> <button onClick={handleKarmaResetClick} style={{"marginLeft": "15px"}}>Reset Karma</button></div>
             
             </div>
         </section>

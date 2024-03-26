@@ -3,6 +3,7 @@ import BasicStats from "../../components/character-sheet/BasicStats";
 import Character from "../../objectClasses/character";
 import { useState } from 'react';
 import { statsContext } from '../../components/context';
+import AbilityScores from "../../components/character-sheet/AbilityScores";
 
 
 function CharacterSheet() {
@@ -18,7 +19,7 @@ function CharacterSheet() {
         <statsContext.Provider value={contextVals}>
             <div className="subtitle page-title">Character Sheet</div>
             <BasicStats />
-            <hr />
+            <AbilityScores />
             <p>{character.biography.history}</p>
         </statsContext.Provider>
     </div>
