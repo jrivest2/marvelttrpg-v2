@@ -55,6 +55,20 @@ section img {
     padding-right: 8px;
 }
 
+
+.ability-score {
+    /* display: flex; */
+    justify-content: center;
+}
+
+.ability-score > div {
+    padding-left: "10px";
+}
+
+.ability-title {
+    font-size: large;
+}
+
 @media screen and (max-width: 600px) {
     
     .character-select {

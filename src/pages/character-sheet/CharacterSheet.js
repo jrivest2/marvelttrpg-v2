@@ -1,5 +1,5 @@
 import { useLoaderData } from "react-router-dom";
-import BasicStats from "../../components/character-sheet/BasicStats";
+import BasicStats from "../../components/character-sheet/BasicStats/BasicStats";
 import Character from "../../objectClasses/character";
 import { useState } from 'react';
 import { statsContext } from '../../components/context';
@@ -20,7 +20,7 @@ function CharacterSheet() {
             <div className="subtitle page-title">Character Sheet</div>
             <BasicStats />
             <AbilityScores />
-            <p>{character.biography.history}</p>
+            {/* <p>{character.biography.history}</p> */}
         </statsContext.Provider>
     </div>
 }

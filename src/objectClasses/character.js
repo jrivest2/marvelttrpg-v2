@@ -29,6 +29,9 @@ export default class Character {
         //Generated Stats
         this.generateBasicStats(characterData)
         this.generateAbilityScores(characterData)
+        this.setSpeeds(characterData)
+        //this.updateTraitStats(characterData)
+        //this.updatePowerStats(characterData)
     };
 
    changeHealth(value) {
@@ -72,7 +75,7 @@ export default class Character {
         this.maxFocus = characterData.maxFocus;
         this.health = characterData.health;
         this.focus = characterData.focus;
-        this.karma = characterData.karma
+        this.karma = characterData.karma;
     } else {
         this.maxHealth = characterData.resilience < 1 ? 10 : 30 * characterData.resilience;
         this.maxFocus = characterData.vigilance < 1 ? 10 : 30 * characterData.vigilance;        
@@ -114,9 +117,57 @@ export default class Character {
         this.eNonCombat = this.ego;
         this.lNonCombat = this.logic;
 
+        this.healthDamageReduction = 0;
+        this.focusDamageReduction = 0;
+
         //Check for powers/traits/tags that may effect these scores.
     }
    }
+
+   setSpeeds(characterData) {
+    if (characterData.hasClassObjects) {
+        this.runSpeed = characterData.runSpeed;
+        this.climbSpeed = characterData.climbSpeed;
+        this.jumpSpeed = characterData.jumpSpeed;
+        this.nonCombatJumpSpeed = characterData.nonCombatJumpSpeed;
+        this.swimSpeed = characterData.swimSpeed;
+        this.flightSpeed = characterData.flightSpeed;
+        this.nonCombatFlightSpeed = characterData.nonCombatFlightSpeed;
+        this.swingSpeed = characterData.swingSpeed;
+        this.glideSpeed = characterData.glideSpeed;
+        this.levitateSpeed = characterData.levitateSpeed;
+    }
+    else {
+        const baseSpeed = 5;
+        this.runSpeed = baseSpeed + parseInt(characterData.agility / 5);
+        this.climbSpeed = parseInt(this.runSpeed / 2) + (this.runSpeed % 2);
+        this.jumpSpeed = parseInt(this.runSpeed / 2) + (this.runSpeed % 2);
+        this.nonCombatJumpSpeed = 0;
+        this.swimSpeed = parseInt(this.runSpeed / 2) + (this.runSpeed % 2);
+        this.flightSpeed = 0;
+        this.nonCombatFlightSpeed = 0;
+        this.glideSpeed = 0;
+        this.swingSpeed = 0;
+        this.levitateSpeed = 0;
+
+    }
+   }
+
+   getSpeeds() {
+    return {
+        runSpeed: this.runSpeed,
+        climbSpeed: this.climbSpeed,
+        jumpSpeed: this.jumpSpeed,
+        nonCombatJumpSpeed: this.nonCombatJumpSpeed,
+        swimSpeed: this.swimSpeed,
+        flightSpeed: this.flightSpeed,
+        nonCombatFlightSpeed: this.nonCombatFlightSpeed,
+        swingSpeed: this.swingSpeed,
+        glideSpeed: this.glideSpeed,
+        levitateSpeed: this.levitateSpeed
+    }
+   }
+
 
    getData() {
     return {
@@ -139,6 +190,30 @@ export default class Character {
         maxFocus: this.maxFocus,
         focus: this.focus,
         karma: this.karma,
+        mDefense: this.mDefense,
+        aDefense: this.aDefense,
+        rDefense: this.rDefense,
+        vDefense: this.vDefense,
+        eDefense: this.eDefense,
+        lDefense: this.lDefense,
+        mNonCombat: this.mNonCombat,
+        aNonCombat: this.aNonCombat,
+        rNonCombat: this.rNonCombat,
+        vNonCombat: this.vNonCombat,
+        eNonCombat: this.eNonCombat,
+        lNonCombat: this.lNonCombat,
+        healthDamageReduction: this.healthDamageReduction,
+        focusDamageReduction: this.focusDamageReduction,
+        runSpeed: this.runSpeed,
+        climbSpeed: this.climbSpeed,
+        jumpSpeed: this.jumpSpeed,
+        nonCombatJumpSpeed: this.nonCombatJumpSpeed,
+        swimSpeed: this.swimSpeed,
+        flightSpeed: this.flightSpeed,
+        nonCombatFlightSpeed: this.nonCombatFlightSpeed,
+        swingSpeed: this.swingSpeed,
+        glideSpeed: this.glideSpeed,
+        levitateSpeed: this.levitateSpeed,
         hasClassObjects: true
 
     }

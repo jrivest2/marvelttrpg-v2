@@ -1,7 +1,8 @@
-import Character from "../../objectClasses/character";
-import TextBox from "../TextBox";
+import Character from "../../../objectClasses/character";
+import TextBox from "../../TextBox";
 import { useContext } from 'react';
-import { statsContext } from '../context'
+import { statsContext } from '../../context'
+import Speed from "./Speed";
 
 export default function BasicStats() {
 
@@ -73,8 +74,12 @@ export default function BasicStats() {
                     <button onClick={handleResetFocusClick}>Reset Focus</button>
                 </div>
                 <br />
+                <div>Health Damage Reduction: -{character.healthDamageReduction}</div>
+                <div>Focus Damage Reduction: -{character.focusDamageReduction}</div>
+                <br />
                 <div>Karma: <button onClick={handleKarmaMinusClick}>-</button> {character.karma} <button onClick={handleKarmaPlusClick}>+</button> <button onClick={handleKarmaResetClick} style={{"marginLeft": "15px"}}>Reset Karma</button></div>
-            
+                <br />
+                <Speed />
             </div>
         </section>
     );
