@@ -80,6 +80,8 @@ export default function BasicStats() {
                 <div>Karma: <button onClick={handleKarmaMinusClick}>-</button> {character.karma} <button onClick={handleKarmaPlusClick}>+</button> <button onClick={handleKarmaResetClick} style={{"marginLeft": "15px"}}>Reset Karma</button></div>
                 <br />
                 <Speed />
+                <br />
+                <div>Initiative Modifier: +{character.initModifier}</div>
             </div>
         </section>
     );

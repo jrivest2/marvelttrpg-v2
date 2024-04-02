@@ -18,9 +18,9 @@ export default function Speed() {
         "levitateSpeed": "Levitate"
     }
 
-    const speeds = Object.entries(character.getSpeeds()).map( (SpeedSet) => {
+    const speeds = Object.entries(character.getSpeeds()).map( (SpeedSet, index) => {
         const [title, value] = SpeedSet;
-        if (value > 0 )return <div>{outputTitles[title]}: {value}</div>
+        if (value > 0 )return <div key={index}>{outputTitles[title]}: {value}</div>
         else return null;
     });
 

@@ -10,4 +10,5 @@ export default class PowerSet {
         if (this.powers.filter((power) => power.name == name)) return true;
         else return false;
     }
+
 }

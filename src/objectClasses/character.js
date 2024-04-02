@@ -120,6 +120,8 @@ export default class Character {
         this.healthDamageReduction = 0;
         this.focusDamageReduction = 0;
 
+        this.initModifier = 0;
+
         //Check for powers/traits/tags that may effect these scores.
     }
    }
@@ -204,6 +206,7 @@ export default class Character {
         lNonCombat: this.lNonCombat,
         healthDamageReduction: this.healthDamageReduction,
         focusDamageReduction: this.focusDamageReduction,
+        initModifier: this.initModifier,
         runSpeed: this.runSpeed,
         climbSpeed: this.climbSpeed,
         jumpSpeed: this.jumpSpeed,

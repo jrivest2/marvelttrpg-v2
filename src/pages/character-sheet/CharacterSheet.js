@@ -4,6 +4,7 @@ import Character from "../../objectClasses/character";
 import { useState } from 'react';
 import { statsContext } from '../../components/context';
 import AbilityScores from "../../components/character-sheet/AbilityScores";
+import PowersSection from "../../components/character-sheet/Powers/PowersSection";
 
 
 function CharacterSheet() {
@@ -20,6 +21,8 @@ function CharacterSheet() {
             <div className="subtitle page-title">Character Sheet</div>
             <BasicStats />
             <AbilityScores />
+            <br />
+            <PowersSection />
             {/* <p>{character.biography.history}</p> */}
         </statsContext.Provider>
     </div>
