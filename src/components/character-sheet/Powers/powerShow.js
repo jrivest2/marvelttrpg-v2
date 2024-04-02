@@ -4,5 +4,5 @@ import Power from "../../../objectClasses/power";
 
 export default function PowerShow({ power }) {
 
-    return <div>{power.name}</div>
+    return <div className="power">{power.name}</div>
 }
