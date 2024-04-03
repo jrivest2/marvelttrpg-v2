@@ -81,7 +81,7 @@ export default function BasicStats() {
                 <br />
                 <Speed />
                 <br />
-                <div>Initiative Modifier: +{character.initModifier}</div>
+                <div>Initiative Modifier: +{character.initModifier} {character.initModifierEdge}</div>
             </div>
         </section>
     );

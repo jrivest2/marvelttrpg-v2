@@ -30,22 +30,30 @@ export default class Character {
         this.generateBasicStats(characterData)
         this.generateAbilityScores(characterData)
         this.setSpeeds(characterData)
-        //this.updateTraitStats(characterData)
+        this.updateTraitStats()
         //this.updatePowerStats(characterData)
     };
 
    changeHealth(value) {
-    if (!value) return;
+    const startVal = this.health;
+    if (!value) return false;
     else if (this.health + value < -this.maxHealth) this.health = -this.maxHealth;
     else if (this.health + value > this.maxHealth) this.health = this.maxHealth;
     else this.health += value;
+
+    if (this.health == startVal) return false;
+    else return true;
    }
 
    changeFocus(value) {
+    const startVal = this.focus;
     if (!value) return;
     if (this.focus + value < -this.maxFocus) this.focus = -this.maxFocus;
     else if (this.focus + value > this.maxFocus) this.focus = this.maxFocus;
     else this.focus += value;
+
+    if (this.focus == startVal) return false;
+    else return true;
    }
 
    resetHealth() {this.health = this.maxHealth}
@@ -101,6 +109,11 @@ export default class Character {
         this.vNonCombat = characterData.vNonCombat;
         this.eNonCombat = characterData.eNonCombat;
         this.lNonCombat = characterData.lNonCombat;
+        
+        this.healthDamageReduction = characterData.healthDamageReduction;
+        this.focusDamageReduction = characterData.focusDamageReduction;
+        this.initModifier = characterData.initModifier;
+
     }
     else {
         this.mDefense = this.melee + 10;
@@ -170,6 +183,23 @@ export default class Character {
     }
    }
 
+   usePower(power) {
+    if (this.focus - power.cost >= -this.maxFocus) this.focus -= power.cost; 
+    else alert("The character does not have enough focus left to use this power.")
+   }
+
+   updateTraitStats() {
+    const traitsThatChangeStats = {
+        "Battle Ready": () => {this.maxFocus += 30; this.resetFocus()},
+        "Situational Awareness": () => this.initModifierEdge = "E",
+    }
+    this.traits.forEach((trait) => {
+        if (trait.name in traitsThatChangeStats) {
+            const func = traitsThatChangeStats[trait.name]
+            func();
+        }
+    })
+   }
 
    getData() {
     return {
@@ -207,6 +237,7 @@ export default class Character {
         healthDamageReduction: this.healthDamageReduction,
         focusDamageReduction: this.focusDamageReduction,
         initModifier: this.initModifier,
+        initModifierEdge: this.initModifierEdge,
         runSpeed: this.runSpeed,
         climbSpeed: this.climbSpeed,
         jumpSpeed: this.jumpSpeed,
@@ -217,6 +248,8 @@ export default class Character {
         swingSpeed: this.swingSpeed,
         glideSpeed: this.glideSpeed,
         levitateSpeed: this.levitateSpeed,
+
+        powerSets: this.powerSets,
         hasClassObjects: true
 
     }
