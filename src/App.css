@@ -76,7 +76,25 @@ section img {
 .power:hover {
     text-decoration-line: underline;
 }
-@media screen and (max-width: 600px) {
+
+.passive {
+    color: #f14667;
+}
+
+.superscript {
+    font-style: italic;
+    display: block;
+    font: serif;
+}
+
+.superscript-container {
+    margin-bottom: 10px;
+    font-size: smaller;
+}
+
+
+
+@media screen and (max-width: 500px) {
     
     .character-select {
         display: block;
@@ -84,5 +102,10 @@ section img {
         justify-content: center;
     }
     
-    
+}
+
+@media screen and (max-width: 420px) {
+    .stats-input button {
+        margin-top: 10px;
+    }
 }

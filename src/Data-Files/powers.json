@@ -1742,7 +1742,7 @@
         "range": "",
         "cost": "",
         "effect": "The Character is known for owning and using a unique and powerful weapon, like Mjolnir (Thor's hammer) or Captain America's shield. The Narrator must approve the details of this weapon. This power can be taken more than once, but each time must be with a different weapon.",
-        "integrated-v1": [1, "Weapon Effects that permenantly effect modifiers  are integrated. Other effects are not integrated."],
+        "integrated-v1": [1, "Weapon Effects that permanently effect modifiers  are integrated. Other effects are not integrated."],
         "integrated": [0, ""]
     },
     {

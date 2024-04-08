@@ -12,7 +12,13 @@ export default function PowerShow({ power }) {
         newChar.usePower(power)
         setCharacter(newChar)
     }
-    const outputNoButton = <div className="power">{power.name}</div>
-    const outputWithButton = <div className="power">{power.name} <button onClick={handleClick}>Use Power</button></div>
+
+    const classNamePassive = "power passive";
+    const classNameNormal = "power";
+    const outputClassName = power.duration == "Permanent" ? classNamePassive : classNameNormal;
+
+    
+    const outputNoButton = <div className={outputClassName}>{power.name}</div>
+    const outputWithButton = <div className={outputClassName}>{power.name} <button onClick={handleClick}>Use Power: {power.cost}</button></div>
     return parseInt(power.cost) ? outputWithButton : outputNoButton
 }

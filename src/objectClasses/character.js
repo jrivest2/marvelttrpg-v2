@@ -16,7 +16,7 @@ export default class Character {
         this.vigilance = characterData.vigilance;
         this.ego = characterData.ego;
         this.logic = characterData.logic;
-        this.powerSets = characterData.hasClassObjects ? characterData.powerSets : Object.entries(characterData.powers).map((powerSet) => {
+        this.powerSets = characterData.hasClassObjects ? characterData.powers : Object.entries(characterData.powers).map((powerSet) => {
             const [name, powers] = powerSet;
             return new PowerSet(name, powers)
         })
@@ -29,9 +29,13 @@ export default class Character {
         //Generated Stats
         this.generateBasicStats(characterData)
         this.generateAbilityScores(characterData)
+        if (!characterData.hasClassObjects) {
+            this.updateTraitStats()
+            this.updatePowerStats()
+        }
+        
         this.setSpeeds(characterData)
-        this.updateTraitStats()
-        //this.updatePowerStats(characterData)
+        
     };
 
    changeHealth(value) {
@@ -84,12 +88,24 @@ export default class Character {
         this.health = characterData.health;
         this.focus = characterData.focus;
         this.karma = characterData.karma;
+
+        this.healthDamageReduction = characterData.healthDamageReduction;
+        this.focusDamageReduction = characterData.focusDamageReduction;
+        this.initModifier = characterData.initModifier;
+
+
     } else {
         this.maxHealth = characterData.resilience < 1 ? 10 : 30 * characterData.resilience;
         this.maxFocus = characterData.vigilance < 1 ? 10 : 30 * characterData.vigilance;        
         this.health = this.maxHealth;
         this.focus = this.maxFocus;
         this.karma = this.hasTag("Heroic") ? this.rank : 0;
+
+        this.healthDamageReduction = 0;
+        this.focusDamageReduction = 0;
+
+        this.initModifier = this.vigilance;
+
     }
     
    }
@@ -109,10 +125,6 @@ export default class Character {
         this.vNonCombat = characterData.vNonCombat;
         this.eNonCombat = characterData.eNonCombat;
         this.lNonCombat = characterData.lNonCombat;
-        
-        this.healthDamageReduction = characterData.healthDamageReduction;
-        this.focusDamageReduction = characterData.focusDamageReduction;
-        this.initModifier = characterData.initModifier;
 
     }
     else {
@@ -129,11 +141,6 @@ export default class Character {
         this.vNonCombat = this.vigilance;
         this.eNonCombat = this.ego;
         this.lNonCombat = this.logic;
-
-        this.healthDamageReduction = 0;
-        this.focusDamageReduction = 0;
-
-        this.initModifier = 0;
 
         //Check for powers/traits/tags that may effect these scores.
     }
@@ -189,9 +196,13 @@ export default class Character {
    }
 
    updateTraitStats() {
+    if (this.hasClassObjects) {
+        return
+    }
     const traitsThatChangeStats = {
         "Battle Ready": () => {this.maxFocus += 30; this.resetFocus()},
         "Situational Awareness": () => this.initModifierEdge = "E",
+        "Big (Reach 2)": () => this.runSpeed++,
     }
     this.traits.forEach((trait) => {
         if (trait.name in traitsThatChangeStats) {
@@ -199,6 +210,18 @@ export default class Character {
             func();
         }
     })
+   }
+
+   updatePowerStats() {
+    const powersThatChangeStats = {
+        "Spider-Sense": () => this.initModifierEdge = "E",
+    }
+    this.powerSets.forEach(powerSet => powerSet.powers.forEach((power) => {
+        if (power.name in powersThatChangeStats) {
+            const func = powersThatChangeStats[power.name]
+            func()
+        }
+    }))
    }
 
    getData() {
@@ -248,8 +271,6 @@ export default class Character {
         swingSpeed: this.swingSpeed,
         glideSpeed: this.glideSpeed,
         levitateSpeed: this.levitateSpeed,
-
-        powerSets: this.powerSets,
         hasClassObjects: true
 
     }
