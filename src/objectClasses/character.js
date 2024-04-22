@@ -29,12 +29,12 @@ export default class Character {
         //Generated Stats
         this.generateBasicStats(characterData)
         this.generateAbilityScores(characterData)
+        this.setSpeeds(characterData)
         if (!characterData.hasClassObjects) {
             this.updateTraitStats()
             this.updatePowerStats()
         }
         
-        this.setSpeeds(characterData)
         
     };
 
@@ -92,6 +92,7 @@ export default class Character {
         this.healthDamageReduction = characterData.healthDamageReduction;
         this.focusDamageReduction = characterData.focusDamageReduction;
         this.initModifier = characterData.initModifier;
+        this.initModifierEdge = characterData.initModifierEdge;
 
 
     } else {
@@ -105,6 +106,7 @@ export default class Character {
         this.focusDamageReduction = 0;
 
         this.initModifier = this.vigilance;
+        this.initModifierEdge = "";
 
     }
     
@@ -215,6 +217,16 @@ export default class Character {
    updatePowerStats() {
     const powersThatChangeStats = {
         "Spider-Sense": () => this.initModifierEdge = "E",
+        "Jump 1": () => {this.jumpSpeed = this.runSpeed},
+        "Jump 2": () => {this.jumpSpeed = this.rank * this.runSpeed; this.nonCombatJumpSpeed = this.jumpSpeed * 3},
+        "Jump 3": () => {this.jumpSpeed = this.rank * this.runSpeed; this.nonCombatJumpSpeed = this.jumpSpeed * 50},
+        "Wallcrawling": () => {this.climbSpeed = this.runSpeed},
+        "Flight 1": () => {this.flightSpeed = this.rank * this.runSpeed; this.nonCombatFlightSpeed = this.flightSpeed * 3; this.jumpSpeed = 0; this.nonCombatJumpSpeed = 0},
+        "Flight 2": () => {this.flightSpeed = this.rank * this.runSpeed; this.nonCombatFlightSpeed = this.flightSpeed * 50; this.jumpSpeed = 0; this.nonCombatJumpSpeed = 0},
+        "Webslinging": () => {this.swingSpeed = this.runSpeed * 3},
+        "Webgliding": () => {this.glideSpeed = this.runSpeed * 2},
+        "Levitation": () => {this.levitateSpeed = this.runSpeed},
+
     }
     this.powerSets.forEach(powerSet => powerSet.powers.forEach((power) => {
         if (power.name in powersThatChangeStats) {
