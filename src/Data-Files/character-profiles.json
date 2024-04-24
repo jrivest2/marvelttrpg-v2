@@ -121,5 +121,41 @@
                 "history": "Born in an alternate universe (Earth-1610), high-school student Miles Morales was bitten by a genetically modified spider that granted him amazing spiderlike abilities. After witnessing the death of his universe's Spider-Man (Peter Parker), Morales decided to take on the hero's mantle and become the new Spider-Man.\n\nWhen Morales' universe was destroyed, he managed to escape to the main Marvel Universe (Earth-616), and the Molecule Man integrated Morales' past life and family into his new home, restoring them to life. Today, Morales attends the Brooklyn Visions Academy and adventures alongside the original Spider-Man, the Order of the Web (a team of Spider-Man-related heroes), as well as establishing himself as a hero all his own.",
                 "personality": "Morales is an excellent student and a loyal friend. He remembers little of his old life on Earth-1610, but he is dedicated to making the most of his second chances on Earth-616 with his family. He looks up to Peter Parker as a mentor, but at the same time, he is determined to carve out his own path and become his own kind of hero."
         }
+    },
+    {
+        "id": "beast",
+        "name": "Beast (Hank McCoy)",
+        "rank": 4,
+        "melee": 3,
+        "agility": 4,
+        "resilience": 2,
+        "vigilance": 2,
+        "ego": 3,
+        "logic": 6,
+        "image": "/img/beast.png",
+        "powers": {
+                "Basic": ["Brilliance 1", "Inspiration", "Mighty 2", "Sturdy 1", "Uncanny 1"],
+                "Martial Arts": ["Attack Stance", "Chain Strikes", "Defense Stance", "Do This All Day", "Fast Strikes", "Leg Sweep"],
+                "Super Strength": ["Banging Heads", "Jump 1"],
+                "Tactics": ["Battle Plan", "Change of Plans", "Combat Support"]
+        },
+        "traits": ["Big", "Clinician", "Combat Reflexes", "Free Running", "Inventor", "Scientific Expertise"],
+        "tags": ["Extreme Appearance", "Heroic", "Hounded", "Krakoan", "Lab Access", "Public Identity", "X-Gene"],
+        "biography": {
+                "name": "Henry Philip \"Hank\" McCoy",
+                "height": "5'11\"",
+                "weight": "402 lbs.",
+                "gender": "Male",
+                "eyes": "Blue",
+                "hair": "Covered with blue fur",
+                "size": "Big",
+                "features": "Pointed teeth and ears, claws, blue fur",
+                "occupation": ["Scientist"],
+                "origin": ["Mutant"],
+                "teams": "Avengers, X-Men, X-Force",
+                "base": "Krakoa",
+                "history": "Despite his obvious brilliance, Hank McCoy was expelled from college because of his mutant status. Shortly thereafter, he was recruited by Professor Xavier to become a founding member of the X-Men.\n\nHank was born with super-strength, agility and intelligence, but he acquired his trade-mark blue fur during a brief sabbatical from the X-Men, when he ingested an experimental serum designed to activate latent mutations. He's temporarily morphed into other forms since, but he always seems to return to the bushy blue Beast he's best known as.\n\nHank is widely regarded as one of the world's greatest scientists and super heroes. In recent years, he's taken on more of a leadership role among the X-Men and mutant society at large, becoming the leader of X-Force.",
+                "personality": "Though something of a hothead in his youth, Hank developed a more stringently logical demeanor. If anything, the modern Beast has become impersonal, seeing his allies more as assets than people."
+        }
     }
 ]
