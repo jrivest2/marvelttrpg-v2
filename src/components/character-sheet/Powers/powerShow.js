@@ -20,5 +20,15 @@ export default function PowerShow({ power }) {
     
     const outputNoButton = <div className={outputClassName}>{power.name}</div>
     const outputWithButton = <div className={outputClassName}>{power.name} <button onClick={handleClick}>Use Power: {power.cost}</button></div>
-    return parseInt(power.cost) ? outputWithButton : outputNoButton
+    const outputVariedCost = <div className={outputClassName}>{power.name} <button>Cost Varies</button></div>
+
+    if (power.cost === "?" || power.cost.includes("+")) {
+        return outputVariedCost;
+    }
+    else if (parseInt(power.cost)) {
+        return outputWithButton;
+    }
+    else {
+        return outputNoButton;
+    }
 }
