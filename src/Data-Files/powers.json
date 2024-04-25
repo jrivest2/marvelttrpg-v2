@@ -10,7 +10,7 @@
         "range": "",
         "cost": "",
         "effect": "The character adds +1 to their Agility damage multiplier, and they gain a +1 bonus to Agility checks other than attacks.",
-        "integrated": [0, ""]
+        "integrated": [2, ""]
     },
     {
         "name": "Accuracy 2",
@@ -23,7 +23,7 @@
         "range": "",
         "cost": "",
         "effect": "The character adds +2 to their Agility damage multiplier, and they gain a +2 bonus to Agility checks other than attacks.",
-        "integrated": [0, ""]
+        "integrated": [2, ""]
     },
     {
         "name": "Accuracy 3",
@@ -36,7 +36,7 @@
         "range": "",
         "cost": "",
         "effect": "The character adds +3 to their Agility damage multiplier, and they gain a +3 bonus to Agility checks other than attacks.",
-        "integrated": [0, ""]
+        "integrated": [2, ""]
     },
     {
         "name": "Accuracy 4",
@@ -49,7 +49,7 @@
         "range": "",
         "cost": "",
         "effect": "The character adds +4 to their Agility damage multiplier, and they gain a +4 bonus to Agility checks other than attacks.",
-        "integrated": [0, ""]
+        "integrated": [2, ""]
     },
     {
         "name": "Additional Limb",
@@ -62,7 +62,7 @@
         "range": "",
         "cost": "",
         "effect": "The character has an additional prehensile appendage (like a tail) or a symmetrical pair of them (like arms) that can be used to lift objects, use tools or otherwise take actions that normally require the use of a hand. This grants them an edge in Melee and Agility checks.\nA character can have as many additional limbs as they like—within reason—but they get no additional advantages for them.",
-        "integrated": [0, ""]
+        "integrated": [2, ""]
     },
     {
         "name": "Advance",
@@ -374,7 +374,7 @@
         "range": "",
         "cost": "",
         "effect": "The character can use their Melee defense score against Agility attacks too.",
-        "integrated": [0, ""]
+        "integrated": [2, ""]
     },
     {
         "name": "Brilliance 1",
@@ -387,7 +387,7 @@
         "range": "",
         "cost": "",
         "effect": "The character adds +1 to their Logic damage multiplier, and they gain a +1 bonus to Logic checks other than attacks.",
-        "integrated": [0, ""]
+        "integrated": [2, ""]
     },
     {
         "name": "Brilliance 2",
@@ -400,7 +400,7 @@
         "range": "",
         "cost": "",
         "effect": "The character adds +2 to their Logic damage multiplier, and they gain a +2 bonus to Logic checks other than attacks.",
-        "integrated": [0, ""]
+        "integrated": [2, ""]
     },
     {
         "name": "Brilliance 3",
@@ -413,7 +413,7 @@
         "range": "",
         "cost": "",
         "effect": "The character adds +3 to their Logic damage multiplier, and they gain a +3 bonus to Logic checks other than attacks.",
-        "integrated": [0, ""]
+        "integrated": [2, ""]
     },
     {
         "name": "Brilliance 4",
@@ -426,7 +426,7 @@
         "range": "",
         "cost": "",
         "effect": "The character adds +4 to their Logic damage multiplier, and they gain a +4 bonus to Logic checks other than attacks.",
-        "integrated": [0, ""]
+        "integrated": [2, ""]
     },
     {
         "name": "Bump Power",
@@ -894,7 +894,7 @@
         "range": "",
         "cost": "",
         "effect": "The character adds +1 to their Ego damage multiplier and they gain a +1 bonus to Ego checks other than attacks.",
-        "integrated": [0, ""]
+        "integrated": [2, ""]
     },
     {
         "name": "Discipline 2",
@@ -907,7 +907,7 @@
         "range": "",
         "cost": "",
         "effect": "The character adds +2 to their Ego damage multiplier and they gain a +2 bonus to Ego checks other than attacks.",
-        "integrated": [0, ""]
+        "integrated": [2, ""]
     },
     {
         "name": "Discipline 3",
@@ -920,7 +920,7 @@
         "range": "",
         "cost": "",
         "effect": "The character adds +3 to their Ego damage multiplier and they gain a +3 bonus to Ego checks other than attacks.",
-        "integrated": [0, ""]
+        "integrated": [2, ""]
     },
     {
         "name": "Discipline 4",
@@ -933,7 +933,7 @@
         "range": "",
         "cost": "",
         "effect": "The character adds +4 to their Ego damage multiplier and they gain a +4 bonus to Ego checks other than attacks.",
-        "integrated": [0, ""]
+        "integrated": [2, ""]
     },
     {
         "name": "Disguise",
@@ -1323,7 +1323,7 @@
         "range": "",
         "cost": "",
         "effect": "The character can use their Agility defense score against Melee attacks too.",
-        "integrated": [0, ""]
+        "integrated": [2, ""]
     },
     {
         "name": "Exorcism",
@@ -1482,7 +1482,7 @@
         "range": "",
         "cost": "",
         "effect": "The character can fly. Their combat Flight Speed is equal to their rank times their Run Speed. Outside of combat, they can move three times their Flight Speed.",
-        "integrated": [0, ""]
+        "integrated": [2, ""]
     },
     {
         "name": "Flight 2",
@@ -1495,7 +1495,7 @@
         "range": "",
         "cost": "",
         "effect": "The character can fly. Their combat Flight Speed is equal to their rank times their Run Speed. Outside of combat, the character can fly up to 50 times their Flight Speed.",
-        "integrated": [0, ""]
+        "integrated": [2, ""]
     },
     {
         "name": "Focus Fire",
@@ -1808,7 +1808,7 @@
         "range": "",
         "cost": "",
         "effect": "The character can use their Logic defense score against Ego attacks too.",
-        "integrated": [0, ""]
+        "integrated": [2, ""]
     },
     {
         "name": "Invisibility",
@@ -1847,7 +1847,7 @@
         "range": "",
         "cost": "",
         "effect": "The character gains the Jump movement mode with a Jump Speed equal to their Run Speed. They can jump this distance in any direction, vertically as well as horizontally.",
-        "integrated": [0, ""]
+        "integrated": [2, ""]
     },
     {
         "name": "Jump 2",
@@ -1860,7 +1860,7 @@
         "range": "",
         "cost": "",
         "effect": "The character's Jump Speed is equal to their rank times their Run Speed. They can jump this distance in any direction, vertically as well as horizontally. Outside of combat, they can move three times as fast.",
-        "integrated": [0, ""]
+        "integrated": [2, ""]
     },
     {
         "name": "Jump 3",
@@ -1873,7 +1873,7 @@
         "range": "",
         "cost": "",
         "effect": "The character's Jump Speed is equal to their rank times their Run Speed. They can jump this distance in any direction, vertically as well as horizontally. Outside of combat, the charater can jump up to 50 times their Jump Speed.",
-        "integrated": [0, ""]
+        "integrated": [2, ""]
     },
     {
         "name": "Keep Moving",
@@ -1925,7 +1925,7 @@
         "range": "",
         "cost": "",
         "effect": "The character can move through the air in any direction at their Run Speed.",
-        "integrated": [0, ""]
+        "integrated": [2, ""]
     },
     {
         "name": "Machine Telepathy",
@@ -1952,7 +1952,7 @@
         "cost": "",
         "effect": "Treat the character as one size bigger for lifting, carrying, swinging and throwing things. They also add +1 to their Melee Damage Multiplier, and they gain a +1 bonus to Melee checks other than attacks.\nIf a character with the Mighty power gets a fantastic success on a close attack, the character has the option of dealing knockback to the target instead. If the character is attacking with an additional power, they must choose between the power's standard special effect (beyond double damage) and applying knockback.\nFor every damage multiplier the character has for the attack, the victim is knocked directly backward 5 spaces. If this causes the target character to smash into something, they take no additional damage. That's already figured into the Fantastic success.",
         "integrated-v1": [1, "The Damage Multiplier and Check Bonus have been integrated, but treating the character as one size bigger has not been integrated."],
-        "integrated": [0, ""]
+        "integrated": [1, "The Damage Multiplier and Check Bonus have been integrated, but treating the character as one size bigger has not been integrated."]
     },
     {
         "name": "Mighty 2",
@@ -1966,7 +1966,7 @@
         "cost": "",
         "effect": "Treat the character as two sizes bigger for lifting, carrying, swinging and throwing things. They also add +2 to their Melee Damage Multiplier, and they gain a +2 bonus to Melee checks other than attacks.\nIf a character with the Mighty power gets a fantastic success on a close attack, the character has the option of dealing knockback to the target instead. If the character is attacking with an additional power, they must choose between the power's standard special effect (beyond double damage) and applying knockback.\nFor every damage multiplier the character has for the attack, the victim is knocked directly backward 5 spaces. If this causes the target character to smash into something, they take no additional damage. That's already figured into the Fantastic success.",
         "integrated-v1": [1, "The Damage Multiplier and Check Bonus have been integrated, but treating the character as one size bigger has not been integrated."],
-        "integrated": [0, ""]
+        "integrated": [1, "The Damage Multiplier and Check Bonus have been integrated, but treating the character as one size bigger has not been integrated."]
     },
     {
         "name": "Mighty 3",
@@ -1980,7 +1980,7 @@
         "cost": "",
         "effect": "Treat the character as three sizes bigger for lifting, carrying, swinging and throwing things. They also add +3 to their Melee Damage Multiplier, and they gain a +3 bonus to Melee checks other than attacks.\nIf a character with the Mighty power gets a fantastic success on a close attack, the character has the option of dealing knockback to the target instead. If the character is attacking with an additional power, they must choose between the power's standard special effect (beyond double damage) and applying knockback.\nFor every damage multiplier the character has for the attack, the victim is knocked directly backward 5 spaces. If this causes the target character to smash into something, they take no additional damage. That's already figured into the Fantastic success.",
         "integrated-v1": [1, "The Damage Multiplier and Check Bonus have been integrated, but treating the character as one size bigger has not been integrated."],
-        "integrated": [0, ""]
+        "integrated": [1, "The Damage Multiplier and Check Bonus have been integrated, but treating the character as one size bigger has not been integrated."]
     },
     {
         "name": "Mighty 4",
@@ -1994,7 +1994,7 @@
         "cost": "",
         "effect": "Treat the character as two sizes bigger for lifting, carrying, swinging and throwing things. They also add +4 to their Melee Damage Multiplier, and they gain a +4 bonus to Melee checks other than attacks.\nIf a character with the Mighty power gets a fantastic success on a close attack, the character has the option of dealing knockback to the target instead. If the character is attacking with an additional power, they must choose between the power's standard special effect (beyond double damage) and applying knockback.\nFor every damage multiplier the character has for the attack, the victim is knocked directly backward 5 spaces. If this causes the target character to smash into something, they take no additional damage. That's already figured into the Fantastic success.",
         "integrated-v1": [1, "The Damage Multiplier and Check Bonus have been integrated, but treating the character as one size bigger has not been integrated."],
-        "integrated": [0, ""]
+        "integrated": [1, "The Damage Multiplier and Check Bonus have been integrated, but treating the character as one size bigger has not been integrated."]
     },
     {
         "name": "Mists of Morpheus",
@@ -2111,7 +2111,7 @@
         "range": "",
         "cost": "",
         "effect": "The character gets Health Damage Reduction 1.",
-        "integrated": [0, ""]
+        "integrated": [2, ""]
     },
     {
         "name": "Return Fire",
@@ -2397,7 +2397,7 @@
         "range": "",
         "cost": "",
         "effect": "The character has an edge on initiative checks and on Vigilance checks to perceive danger. Enemies have trouble on Agility checks against the character's Vigilance defense. The character also gains a permanent +2 bonus to their Agility Defense.",
-        "integrated": [0, ""]
+        "integrated": [1, "The Edge on Initiative checks has been implemented as well as the permanent +2 Agility Defense Bonus. The Vigilance checks to perceive danger and enemy troubles have not been implemented. "]
     },
     {
         "name": "Spider-Strike",
@@ -2436,7 +2436,7 @@
         "range": "",
         "cost": "",
         "effect": "The character's body is so sturdy that they have Health Damage Reduction 1.\nIf this power stems from armor or anything else removable—like Iron Man's armor—the character should apply the Tech Reliance trait to it.",
-        "integrated": [0, ""]
+        "integrated": [2, ""]
     },
     {
         "name": "Sturdy 2",
@@ -2449,7 +2449,7 @@
         "range": "",
         "cost": "",
         "effect": "The character gains Health Damage Reduction 2.\nIf this power stems from armor or anything else removable—like Iron Man's armor—the character should apply the Tech Reliance trait to it.",
-        "integrated": [0, ""]
+        "integrated": [2, ""]
     },
     {
         "name": "Sturdy 3",
@@ -2462,7 +2462,7 @@
         "range": "",
         "cost": "",
         "effect": "The character gains Health Damage Reduction 3.\nIf this power stems from armor or anything else removable—like Iron Man's armor—the character should apply the Tech Reliance trait to it.",
-        "integrated": [0, ""]
+        "integrated": [2, ""]
     },
     {
         "name": "Sturdy 4",
@@ -2475,7 +2475,7 @@
         "range": "",
         "cost": "",
         "effect": "The character gains Health Damage Reduction 4.\nIf this power stems from armor or anything else removable—like Iron Man's armor—the character should apply the Tech Reliance trait to it.",
-        "integrated": [0, ""]
+        "integrated": [2, ""]
     },
     {
         "name": "Summon Portal",
@@ -2504,32 +2504,6 @@
         "integrated": [0, ""]
     },
     {
-        "name": "Uncanny 1",
-        "summary": "The character has protection against mental assaults.",
-        "set": ["Basic"],
-        "prerequisites": [],
-        "action": [],
-        "trigger": "",
-        "duration": "Permanent",
-        "range": "",
-        "cost": "",
-        "effect": "Any damage multiplier for attacks against the character's Focus is reduced by 1. If this power is part of a battle suit, the power is integrated into a removable helmet. Otherwise, it's part of the character.\nIf this power stems from armor or anything removable—like Magneto's helmet—the character should apply the Tech Reliance trait to it.",
-        "integrated": [0, ""]
-    },
-    {
-        "name": "Uncanny 2",
-        "summary": "The character is protected as if by steel.",
-        "set": ["Basic"],
-        "prerequisites": ["Uncanny 1", "Rank 2"],
-        "action": [],
-        "trigger": "",
-        "duration": "Permanent",
-        "range": "",
-        "cost": "",
-        "effect": "Any damage multiplier for attacks against the character's Focus is reduced by 2. If this power is part of a battle suit, the power is integrated into a removable helmet. Otherwise, it's part of the character.\nIf this power stems from armor or anything removable—like Magneto's helmet—the character should apply the Tech Reliance trait to it.",
-        "integrated": [0, ""]
-    },
-    {
         "name": "Thunder",
         "summary": "The character causes a deafening crack of thunder.",
         "set": ["Weather Control"],
@@ -2543,6 +2517,32 @@
         "integrated": [0, ""]
     },
     {
+        "name": "Uncanny 1",
+        "summary": "The character has protection against mental assaults.",
+        "set": ["Basic"],
+        "prerequisites": [],
+        "action": [],
+        "trigger": "",
+        "duration": "Permanent",
+        "range": "",
+        "cost": "",
+        "effect": "Any damage multiplier for attacks against the character's Focus is reduced by 1. If this power is part of a battle suit, the power is integrated into a removable helmet. Otherwise, it's part of the character.\nIf this power stems from armor or anything removable—like Magneto's helmet—the character should apply the Tech Reliance trait to it.",
+        "integrated": [2, ""]
+    },
+    {
+        "name": "Uncanny 2",
+        "summary": "The character is protected as if by steel.",
+        "set": ["Basic"],
+        "prerequisites": ["Uncanny 1", "Rank 2"],
+        "action": [],
+        "trigger": "",
+        "duration": "Permanent",
+        "range": "",
+        "cost": "",
+        "effect": "Any damage multiplier for attacks against the character's Focus is reduced by 2. If this power is part of a battle suit, the power is integrated into a removable helmet. Otherwise, it's part of the character.\nIf this power stems from armor or anything removable—like Magneto's helmet—the character should apply the Tech Reliance trait to it.",
+        "integrated": [2, ""]
+    },
+    {
         "name": "Uncanny 3",
         "summary": "The character is protected like a tank.",
         "set": ["Basic"],
@@ -2553,7 +2553,7 @@
         "range": "",
         "cost": "",
         "effect": "Any damage multiplier for attacks against the character's Focus is reduced by 31. If this power is part of a battle suit, the power is integrated into a removable helmet. Otherwise, it's part of the character.\nIf this power stems from armor or anything removable—like Magneto's helmet—the character should apply the Tech Reliance trait to it.",
-        "integrated": [0, ""]
+        "integrated": [2, ""]
     },
     {
         "name": "Uncanny 4",
@@ -2566,7 +2566,7 @@
         "range": "",
         "cost": "",
         "effect": "Any damage multiplier for attacks against the character's Focus is reduced by 4. If this power is part of a battle suit, the power is integrated into a removable helmet. Otherwise, it's part of the character.\nIf this power stems from armor or anything removable—like Magneto's helmet—the character should apply the Tech Reliance trait to it.",
-        "integrated": [0, ""]
+        "integrated": [2, ""]
     },
     {
         "name": "Unflappable Poise",
@@ -2631,7 +2631,7 @@
         "range": "",
         "cost": "",
         "effect": "The character can climb at a speed equal to their regular speed. Under normal conditions, they never lose their grip, no matter the angle of the surface.",
-        "integrated": [0, ""]
+        "integrated": [2, ""]
     },
     {
         "name": "Weapons Blazing",
@@ -2696,7 +2696,7 @@
         "range": "",
         "cost": "",
         "effect": "The character gains the Glide movement mode, with a speed equal to double their Run Speed.",
-        "integrated": [0, ""]
+        "integrated": [2, ""]
     },
     {
         "name": "Webgrabbing",
@@ -2722,7 +2722,7 @@
         "range": "",
         "cost": "",
         "effect": "The character gains the Swingline movement mode, with a Speed equal to triple their Run Speed. The reach of their swingline is equal to their Swingline Speed.",
-        "integrated": [0, ""]
+        "integrated": [2, ""]
     },
     {
         "name": "Webtrapping",

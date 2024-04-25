@@ -264,6 +264,16 @@ export default class Character {
         "Brilliance 3": () => {this.addLogicNonCombat(3)}, // +3 to Logic Damage Multiplier.
         "Brilliance 4": () => {this.addLogicNonCombat(4)}, // +4 to Logic Damage Multiplier.
 
+        "Sturdy 1": () => {this.healthDamageReduction = 1},
+        "Sturdy 2": () => {this.healthDamageReduction = 2},
+        "Sturdy 3": () => {this.healthDamageReduction = 3},
+        "Sturdy 4": () => {this.healthDamageReduction = 4},
+        "Uncanny 1": () => {this.focusDamageReduction = 1},
+        "Uncanny 2": () => {this.focusDamageReduction = 2},
+        "Uncanny 3": () => {this.focusDamageReduction = 3},
+        "Uncanny 4": () => {this.focusDamageReduction = 4},
+        "Reinforced Skeleton": () => {this.healthDamageReduction = 1},
+
         "Evasion": () => {this.hasEvasion = true;},
         "Integrity": () => {this.hasIntegrity = true;},
         "Brawling": () => {this.hasBrawling = true;}

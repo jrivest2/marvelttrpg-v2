@@ -45,7 +45,7 @@
         "name": "Big",
         "description": "The character's size is big. which applies -1 to their Melee and Agility defenses, adds +1 to their Run Speed, and increases their reach to 2. They still occupy a single space.",
         "restriction": "",
-        "integrated": [0, ""]
+        "integrated": [1, "The -1 to Agility and Melee defenses has been applied as well as +1 to Run Speed. Reach Increase has not been implemented yet."]
 
     },
     {
