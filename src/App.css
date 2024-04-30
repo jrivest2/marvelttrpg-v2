@@ -92,7 +92,15 @@ section img {
     font-size: smaller;
 }
 
+.clickScript {
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+}
 
+.basic-actions-rule {
+    padding-left: 10%;
+    padding-right: 10%;
+}
 
 @media screen and (max-width: 500px) {
     

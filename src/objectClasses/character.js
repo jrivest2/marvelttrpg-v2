@@ -32,6 +32,7 @@ export default class Character {
         //Generated Stats
         this.generateBasicStats(characterData)
         this.generateAbilityScores(characterData)
+        this.generateDamageMultipliersAndModifiers(characterData)
         this.setSpeeds(characterData)
         if (!characterData.hasClassObjects) {
             this.updateTraitStats()
@@ -165,6 +166,32 @@ export default class Character {
     }
    }
 
+   generateDamageMultipliersAndModifiers(characterData) {
+    if (characterData.hasClassObjects) {
+        this.meleeDamageMultiplier = characterData.meleeDamageMultiplier;
+        this.agilityDamageMultiplier = characterData.agilityDamageMultiplier;
+        this.egoDamageMultiplier = characterData.egoDamageMultiplier;
+        this.logicDamageMultiplier = characterData.logicDamageMultiplier;
+
+        this.meleeDamageModifier = characterData.meleeDamageModifier;
+        this.agilityDamageModifier = characterData.agilityDamageModifier;
+        this.egoDamageModifier = characterData.egoDamageModifier;
+        this.logicDamageModifier = characterData.logicDamageModifier;
+    }
+    else {
+        this.meleeDamageMultiplier = this.rank;
+        this.agilityDamageMultiplier = this.rank;
+        this.egoDamageMultiplier = this.rank;
+        this.logicDamageMultiplier = this.rank;
+
+        this.meleeDamageModifier = this.melee;
+        this.agilityDamageModifier = this.agility;
+        this.egoDamageModifier = this.ego;
+        this.logicDamageModifier = this.logic;
+    }
+
+   }
+
    setSpeeds(characterData) {
     if (characterData.hasClassObjects) {
         this.runSpeed = characterData.runSpeed;
@@ -247,22 +274,22 @@ export default class Character {
         "Webgliding": () => {this.glideSpeed = this.runSpeed * 2},
         "Levitation": () => {this.levitateSpeed = this.runSpeed},
 
-        "Mighty 1": () => {this.addMeleeNonCombat(1)}, // +1 to Melee Damage Multiplier. Treat as 1 size bigger for throwing/lifting/carrying/swinging.
-        "Mighty 2": () => {this.addMeleeNonCombat(2)}, // +2 to Melee Damage Multiplier. Treat as 2 sizes bigger for throwing/lifting/carrying/swinging.
-        "Mighty 3": () => {this.addMeleeNonCombat(3)}, // +3 to Melee Damage Multiplier. Treat as 3 sizes bigger for throwing/lifting/carrying/swinging.
-        "Mighty 4": () => {this.addMeleeNonCombat(4)}, // +4 to Melee Damage Multiplier. Treat as 4 sizes bigger for throwing/lifting/carrying/swinging.
-        "Accuracy 1": () => {this.addAgiiltyNonCombat(1)}, // +1 to Agility Damage Multiplier. 
-        "Accuracy 2": () => {this.addAgiiltyNonCombat(2)}, // +2 to Agility Damage Multiplier.
-        "Accuracy 3": () => {this.addAgiiltyNonCombat(3)}, // +3 to Agility Damage Multiplier.
-        "Accuracy 4": () => {this.addAgiiltyNonCombat(4)}, // +4 to Agility Damage Multiplier.
-        "Discipline 1": () => {this.addEgoNonCombat(1)}, // +1 to Ego Damage Multiplier.
-        "Discipline 2": () => {this.addEgoNonCombat(2)}, // +2 to Ego Damage Multiplier.
-        "Discipline 3": () => {this.addEgoNonCombat(3)}, // +3 to Ego Damage Multiplier.
-        "Discipline 4": () => {this.addEgoNonCombat(4)}, // +4 to Ego Damage Multiplier.
-        "Brilliance 1": () => {this.addLogicNonCombat(1)}, // +1 to Logic Damage Multiplier.
-        "Brilliance 2": () => {this.addLogicNonCombat(2)}, // +2 to Logic Damage Multiplier.
-        "Brilliance 3": () => {this.addLogicNonCombat(3)}, // +3 to Logic Damage Multiplier.
-        "Brilliance 4": () => {this.addLogicNonCombat(4)}, // +4 to Logic Damage Multiplier.
+        "Mighty 1": () => {this.addMeleeNonCombat(1); this.addMeleeDamageMultiplier(1)}, // Treat as 1 size bigger for throwing/lifting/carrying/swinging.
+        "Mighty 2": () => {this.addMeleeNonCombat(2); this.addMeleeDamageMultiplier(2)}, // Treat as 2 sizes bigger for throwing/lifting/carrying/swinging.
+        "Mighty 3": () => {this.addMeleeNonCombat(3); this.addMeleeDamageMultiplier(3)}, // Treat as 3 sizes bigger for throwing/lifting/carrying/swinging.
+        "Mighty 4": () => {this.addMeleeNonCombat(4); this.addMeleeDamageMultiplier(4)}, // Treat as 4 sizes bigger for throwing/lifting/carrying/swinging.
+        "Accuracy 1": () => {this.addAgiiltyNonCombat(1); this.addAgilityDamageMultiplier(1)},
+        "Accuracy 2": () => {this.addAgiiltyNonCombat(2); this.addAgilityDamageMultiplier(2)},
+        "Accuracy 3": () => {this.addAgiiltyNonCombat(3); this.addAgilityDamageMultiplier(3)},
+        "Accuracy 4": () => {this.addAgiiltyNonCombat(4); this.addAgilityDamageMultiplier(4)},
+        "Discipline 1": () => {this.addEgoNonCombat(1); this.addEgoDamageMultiplier(1)},
+        "Discipline 2": () => {this.addEgoNonCombat(2); this.addEgoDamageMultiplier(2)},
+        "Discipline 3": () => {this.addEgoNonCombat(3); this.addEgoDamageMultiplier(3)},
+        "Discipline 4": () => {this.addEgoNonCombat(4); this.addEgoDamageMultiplier(4)},
+        "Brilliance 1": () => {this.addLogicNonCombat(1); this.addLogicDamageMultiplier(1)},
+        "Brilliance 2": () => {this.addLogicNonCombat(2); this.addLogicDamageMultiplier(2)},
+        "Brilliance 3": () => {this.addLogicNonCombat(3); this.addLogicDamageMultiplier(3)},
+        "Brilliance 4": () => {this.addLogicNonCombat(4); this.addLogicDamageMultiplier(4)},
 
         "Sturdy 1": () => {this.healthDamageReduction = 1},
         "Sturdy 2": () => {this.healthDamageReduction = 2},
@@ -297,6 +324,10 @@ export default class Character {
    addVigilanceNonCombat(value) { this.vNonCombat += value}
    addEgoNonCombat(value) { this.eNonCombat += value}
    addLogicNonCombat(value) { this.lNonCombat += value}
+   addMeleeDamageMultiplier(value) {this.meleeDamageMultiplier += value}
+   addAgilityDamageMultiplier(value) {this.agilityDamageMultiplier += value}
+   addEgoDamageMultiplier(value) {this.egoDamageMultiplier += value}
+   addLogicDamageMultiplier(value) {this.logicDamageMultiplier += value}
 
 
    getData() {
@@ -331,6 +362,15 @@ export default class Character {
         vigilanceEdge: this.vigilanceEdge,
         egoEdge: this.egoEdge,
         logicEdge: this.logicEdge,
+
+        meleeDamageMultiplier: this.meleeDamageMultiplier,
+        agilityDamageMultiplier: this.agilityDamageMultiplier,
+        egoDamageMultiplier: this.egoDamageMultiplier,
+        logicDamageMultiplier: this.logicDamageMultiplier,
+        meleeDamageModifier: this.meleeDamageModifier,
+        agilityDamageModifier: this.agilityDamageModifier,
+        egoDamageModifier: this.egoDamageModifier,
+        logicDamageModifier: this.logicDamageModifier,
 
         powers: this.powerSets,
         traits: this.traits,

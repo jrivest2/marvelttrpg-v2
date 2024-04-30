@@ -5,6 +5,8 @@ import { useState } from 'react';
 import { statsContext } from '../../components/context';
 import AbilityScores from "../../components/character-sheet/AbilityScores";
 import PowersSection from "../../components/character-sheet/Powers/PowersSection";
+import Damage from "../../components/character-sheet/Damage";
+import BasicActions from "../../components/character-sheet/BasicActions";
 
 
 function CharacterSheet() {
@@ -22,6 +24,10 @@ function CharacterSheet() {
             <BasicStats />
             <AbilityScores />
             <br />
+            <Damage />
+            <hr />
+            <BasicActions />
+            <hr />
             <PowersSection />
             {/* <p>{character.biography.history}</p> */}
         </statsContext.Provider>
