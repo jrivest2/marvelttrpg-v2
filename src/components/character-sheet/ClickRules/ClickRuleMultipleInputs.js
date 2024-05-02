@@ -6,8 +6,6 @@ export default function ClickRuleMultipleInputs({title, titleClass, children}) {
     const handleClick = () => {
         setIsClicked(!isClicked)
     }
-    // const ruleName = 
-    // console.log(ruleName, title)
 
     const outputTitle = title.slice(2).map((item, index) => <div key={index}>{item}</div>);
 

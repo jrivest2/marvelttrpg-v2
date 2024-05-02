@@ -81,10 +81,12 @@ section img {
     color: #f14667;
 }
 
+
 .superscript {
     font-style: italic;
     display: block;
     font: serif;
+    font-size: x-small;
 }
 
 .superscript-container {
@@ -100,6 +102,27 @@ section img {
 .basic-actions-rule {
     padding-left: 10%;
     padding-right: 10%;
+}
+
+.power-name {
+    font-size: larger;
+}
+
+.power-summary {
+    margin-bottom: 10px;
+    font-size: small;
+}
+
+.power-set-single {
+    font-size: x-small;
+}
+
+.power-effect {
+    margin-top: 10px;
+}
+
+.power-integrated {
+    margin-top: 15px;
 }
 
 @media screen and (max-width: 500px) {

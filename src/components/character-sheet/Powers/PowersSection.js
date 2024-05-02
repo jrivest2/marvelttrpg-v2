@@ -14,10 +14,6 @@ export default function PowersSection() {
 
         <div className="powers-section">
             <div className="title">Powers</div>
-            <div className="superscript-container"> {/* <-- Move this into the ClickRules to clear clutter */}
-                <sup className="passive superscript">*Passive Powers*</sup> 
-                <sup className="superscript">*Active Powers*</sup>
-            </div>
             <div>{outputPowerSets}</div>
         </div>
     );

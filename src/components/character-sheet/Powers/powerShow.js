@@ -2,6 +2,9 @@ import { useContext } from "react";
 import { statsContext } from "../../context";
 import Power from "../../../objectClasses/power";
 import Character from "../../../objectClasses/character";
+import ClickRuleBasic from "../ClickRules/ClickRuleBasic";
+import ClickRuleSplitTitlePartialClick from "../ClickRules/ClickRuleSplitTitlePartialClick";
+import PowerClickBody from "./PowerClickBody";
 
 export default function PowerShow({ power }) {
 
@@ -15,20 +18,16 @@ export default function PowerShow({ power }) {
 
     const classNamePassive = "power passive";
     const classNameNormal = "power";
-    const outputClassName = power.duration == "Permanent" ? classNamePassive : classNameNormal;
+    const outputClassName = power.duration === "Permanent" ? classNamePassive : classNameNormal;
 
     
-    const outputNoButton = <div className={outputClassName}>{power.name}</div>
-    const outputWithButton = <div className={outputClassName}>{power.name} <button onClick={handleClick}>Use Power: {power.cost}</button></div>
-    const outputVariedCost = <div className={outputClassName}>{power.name} <button>Cost Varies</button></div>
+    
+    const outputNoButton = <ClickRuleBasic title={power.name} titleClass={outputClassName}><PowerClickBody power={power}/></ClickRuleBasic>
+    const outputWithButton = <ClickRuleSplitTitlePartialClick title={[power.name, <button onClick={handleClick}>Use Power: {power.cost}</button>]} titleClass={outputClassName}><PowerClickBody power={power}/></ClickRuleSplitTitlePartialClick>
+    const outputVariedCost = <ClickRuleSplitTitlePartialClick title={[power.name, <button>Cost Varies</button>]} titleClass={outputClassName}><PowerClickBody power={power}/></ClickRuleSplitTitlePartialClick>
 
-    if (power.cost === "?" || power.cost.includes("+")) {
-        return outputVariedCost;
-    }
-    else if (parseInt(power.cost)) {
-        return outputWithButton;
-    }
-    else {
-        return outputNoButton;
-    }
+
+    const finalOutput = (power.cost === "?" || power.cost.includes("+")) ? outputVariedCost : parseInt(power.cost) ? outputWithButton : outputNoButton
+    
+    return finalOutput;
 }

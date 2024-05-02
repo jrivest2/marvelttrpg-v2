@@ -6,6 +6,7 @@ import Speed from "./Speed";
 import ClickRuleSplitTitle from "../ClickRules/ClickRuleSplitTitle";
 import ClickRuleBasic from "../ClickRules/ClickRuleBasic";
 import ClickRuleMultipleInputs from "../ClickRules/ClickRuleMultipleInputs";
+import ClickRuleSplitTitlePartialClick from "../ClickRules/ClickRuleSplitTitlePartialClick";
 
 export default function BasicStats() {
 
@@ -149,7 +150,7 @@ export default function BasicStats() {
                 
                 <br />
                 
-                <ClickRuleSplitTitle title={["Karma", <><button onClick={handleKarmaMinusClick}>-</button> {character.karma} <button onClick={handleKarmaPlusClick}>+</button> <button onClick={handleKarmaResetClick} style={{"marginLeft": "15px"}}>Reset Karma</button></>]} titleClass={'stats-input'}>
+                <ClickRuleSplitTitlePartialClick title={["Karma", <><button onClick={handleKarmaMinusClick}>-</button> {character.karma} <button onClick={handleKarmaPlusClick}>+</button> <button onClick={handleKarmaResetClick} style={{"marginLeft": "15px"}}>Reset Karma</button></>]}>
                 <div className="title"><b>Karma</b></div>
                     <div><i>Karma</i> represents that wild mix of luck, grit and destiny that seems to intervene in the lives of heroes. All heroes have Karma equal to their rank. To be considered a hero, the character has to have the tag "Heroic".</div>
                     <br></br>
@@ -183,7 +184,7 @@ export default function BasicStats() {
                     <div className="subtitle">Karma and Acting Heroic</div>
                     <div>Only characters with the tag "Heroic" start out with Karma, but other characters can earn Karma too by doing good things—even if they are not generally heroic people. This includes villains, like Doctor Doom or Killmonger, and the antiheroes like the Punisher too.</div>
                     <div>To make any use out of the Karma they earn, these non-heroes should spend it that same day. Otherwise, after they have a full night's sleep, their earned Karma vanishes.</div>
-                </ClickRuleSplitTitle>
+                </ClickRuleSplitTitlePartialClick>
 
                 <br />
                 

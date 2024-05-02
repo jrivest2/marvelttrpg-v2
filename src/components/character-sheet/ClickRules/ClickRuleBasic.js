@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function ClickRuleBasic({title, children}) {
+export default function ClickRuleBasic({title, titleClass, children}) {
     const [isClicked, setIsClicked] = useState(false)
 
     const handleClick = () => {
@@ -8,12 +8,12 @@ export default function ClickRuleBasic({title, children}) {
     }
 
     const clickedOuput = <>
-        <div onClick={handleClick}>{title}<sup className='clickScript'>i</sup></div>
+        <div onClick={handleClick} className={titleClass}>{title}<sup className='clickScript'>i</sup></div>
         <hr />
         <div className="basic-actions-rule">{children}</div>
         <hr />
     </>
-    const defaultOutput = <><div onClick={handleClick}>{title}<sup className='clickScript'>i</sup></div></>
+    const defaultOutput = <><div onClick={handleClick} className={titleClass}>{title}<sup className='clickScript'>i</sup></div></>
 
     return isClicked ? clickedOuput : defaultOutput;
 
