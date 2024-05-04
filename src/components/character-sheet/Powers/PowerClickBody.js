@@ -35,13 +35,13 @@ export default function PowerClickBody({power, subPower}) {
                         case 1:
                             return <div key={index} className="power-integrated">This power's effects have been <b>PARTIALLY</b> integrated into the website. {value[1]}</div>;
                         case 2:
-                            return <div key={index} className="power-integrated">This power's effects have yet been integrated into the website. Its effects have been <b>COMPLETELY</b> integrated into the website.</div>
+                            return <div key={index} className="power-integrated">This power's effects have yet been <b>COMPLETELY</b> integrated into the website.</div>;
                     }
             }
         }
     })
     
-    const passiveNote = (power.duration === "Permanent") ? <div><br /><div className="passive superscript">**Powers Marked in Red are Passive Powers.**</div> <div className="passive superscript">These powers do not have Action Types, but rather, they act as permenant stat buffs.</div></div> : "";
+    const passiveNote = (power.duration === "Permanent") ? <div><br /><div className="passive superscript">**Powers marked in Red are Passive Powers.**</div> <div className="passive superscript">These powers do not have Action Types, but rather, they act as permenant stat buffs.</div></div> : "";
 
     return (
         <>

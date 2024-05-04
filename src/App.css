@@ -111,18 +111,29 @@ section img {
 .power-summary {
     margin-bottom: 10px;
     font-size: small;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .power-set-single {
     font-size: x-small;
 }
 
+.power-trigger {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 .power-effect {
     margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .power-integrated {
     margin-top: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 @media screen and (max-width: 500px) {
