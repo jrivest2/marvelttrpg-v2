@@ -43,10 +43,9 @@
     },
     {
         "name": "Heroic",
-        "description": "The character acts heroically. They help people in need, and they do their best not to kill—even with people who might deserve it.",
+        "description": "The character acts heroically. They help people in need, and they do their best not to kill—even with people who might deserve it.\nThey also have a default Karma stat equal to their rank.",
         "restriction": "The character cannot also be Villainous.",
-        "integrated-v1": [1, "This tag is integrated with the Karma stat on the website, but the restriction is not integrated."],
-        "integrated": [0, ""]
+        "integrated": [1, "This tag is integrated with the Karma stat on the website, but the restriction is not integrated."]
     },
     {
         "name": "Hounded",

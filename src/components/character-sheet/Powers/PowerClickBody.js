@@ -26,7 +26,7 @@ export default function PowerClickBody({power, subPower}) {
                     return <div key={index} className="power-cost"><b>Cost</b>: {value}</div>;
                 case "effect":
                     const newVal = value.split("\n")
-                    const effectOutput = newVal.map((paragraph, index2) => {return <div key={index2}>{paragraph}</div>})
+                    const effectOutput = newVal.map((paragraph, index2) => {return <div key={index2} style={{"marginTop": "10px"}}>{paragraph}</div>})
                     return <div key={index} className="power-effect">{effectOutput}</div>;
                 case "integrated":
                     switch(value[0]) {

@@ -136,6 +136,27 @@ section img {
     margin-right: 10%;
 }
 
+.trait-name {
+    margin-bottom: 15px;
+}
+
+.trait-description {
+    margin-bottom: 10px;
+}
+
+.trait-integrated {
+    margin-top: 15px;
+}
+
+
+.tag-description {
+    margin-bottom: 10px;
+}
+
+.tag-integrated {
+    margin-top: 15px;
+}
+
 @media screen and (max-width: 500px) {
     
     .character-select {

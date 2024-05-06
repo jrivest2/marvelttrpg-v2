@@ -19,8 +19,6 @@ export default function PowerShow({ power }) {
     const classNamePassive = "power passive";
     const classNameNormal = "power";
     const outputClassName = power.duration === "Permanent" ? classNamePassive : classNameNormal;
-
-    
     
     const outputNoButton = <ClickRuleBasic title={power.name} titleClass={outputClassName}><PowerClickBody power={power}/></ClickRuleBasic>
     const outputWithButton = <ClickRuleSplitTitlePartialClick title={[power.name, <button onClick={handleClick}>Use Power: {power.cost}</button>]} titleClass={outputClassName}><PowerClickBody power={power}/></ClickRuleSplitTitlePartialClick>
