@@ -3,8 +3,10 @@ export default function PowerClickBody({power, subPower}) {
     const output = Object.entries(power).map((item, index) => {
         const [name, value] = item;
         if (value.length !=0) {
+            const powerIsIconicWeapon = value.includes("Iconic Weapon") ? true : false;
             switch(name) {
                 case "name":
+                    if (powerIsIconicWeapon) return <div key={index} className="power-name"><b>Iconic Weapon</b></div>;
                     return <div key={index} className="power-name"><b>{value}</b></div>;
                 case "summary":
                     return (<div key={index} className="power-summary"><i>{value}</i></div>);
@@ -37,6 +39,11 @@ export default function PowerClickBody({power, subPower}) {
                         case 2:
                             return <div key={index} className="power-integrated">This power's effects have yet been <b>COMPLETELY</b> integrated into the website.</div>;
                     }
+                case "iconicWeaponName":
+                    return <div key={index} className="power-iconic-weapon"><b>{value}</b></div>
+                case "combatRules":
+                    const combatRulesOutput = value.map((rule, index2) => {return <div key={index2} className="iconic-weapon-rule">{rule}</div>});
+                    return <div key={index} className="iconic-weapon-combat-rules">Combat Rules: {combatRulesOutput}</div>
             }
         }
     })

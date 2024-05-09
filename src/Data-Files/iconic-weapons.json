@@ -1,0 +1,8 @@
+[
+    {
+        "name": "Mjolnir",
+        "combatRules": ["+1 Melee Damage Multiplier", "+1 Agility Damage Multiplier"],
+        "narrativeRules":  ["Returns to thrower.", "Can only be wielded by the worthy."],
+        "integrated": [1, "The combat rules have been integrated. The narrative rules have not been integrated."]
+    }
+]

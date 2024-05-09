@@ -9,5 +9,6 @@ export default class Origin {
         this.tags = originData.tags;
         this.traits = originData.traits;
         this.suggestedOccupation = originData.suggestedOccupation;
+        this.powers = originData.powers;
     }
 }

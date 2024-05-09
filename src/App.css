@@ -157,6 +157,84 @@ section img {
     margin-top: 15px;
 }
 
+.bio-section {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 40px;
+}
+
+.bio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30px 30px 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.bio-features {
+    margin-top: 20px;
+    /* margin-bottom: 10px; */
+}
+
+.bio-history {
+    margin-top: 15px;
+}
+
+.bio-personality {
+    margin-top: 15px;
+}
+
+.occupation-section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.occupation-section-title {
+    font-size: large;
+}
+
+.occupation-description {
+    margin-bottom: 10px;
+}
+
+.occupation-examples {
+    font-size: smaller;
+    margin-bottom: 10px;
+}
+
+.occupation-traits {
+    font-size: smaller;
+}
+
+.occupation-tags {
+    font-size: smaller;
+}
+
+.origin-section {
+    margin-bottom: 20px;
+}
+
+.origin-section-title {
+    font-size: large;
+}
+
+.origin-description {
+    margin-bottom: 10px;
+}
+
+.origin-examples {
+    font-size: smaller;
+    margin-bottom: 10px;
+}
+
+.origin-traits {
+    font-size: smaller;
+}
+
+.origin-tags {
+    font-size: smaller;
+}
+
 @media screen and (max-width: 500px) {
     
     .character-select {

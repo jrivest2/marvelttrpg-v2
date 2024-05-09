@@ -9,7 +9,7 @@ export default class Tag {
             addendum = tempAddendum;
         }
         const tagData = tagRules.filter((tag) => tag.name == tagName)[0]
-        this.name = tagData.name;
+        this.name = addendum ?  tagData.name + ": " + addendum : tagData.name;
         this.description = tagData.description;
         this.restriction = tagData.restriction;
         this.integrated = tagData.integrated;

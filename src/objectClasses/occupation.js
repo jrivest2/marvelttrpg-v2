@@ -7,8 +7,8 @@ export default class Occupation {
         this.name = occupationData.name;
         this.description = occupationData.description;
         this.examples = occupationData.examples;
-        this.tags = occupationData.tags; //maybe do tag objects later??
         this.traits = occupationData.traits;
+        this.tags = occupationData.tags; //maybe do tag objects later??
 
     }
 }

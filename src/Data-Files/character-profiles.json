@@ -77,7 +77,7 @@
                 "eyes": "Hazel",
                 "hair": "Brown",
                 "size": "Average",
-                "features": "None",
+                "features": "",
                 "occupation": ["Journalist"],
                 "origin": ["Weird Science"],
                 "teams": "Avengers, Fantastic Four, Spider-Army",
@@ -113,7 +113,7 @@
                 "eyes": "Brown",
                 "hair": "Black",
                 "size": "Average",
-                "features": "None",
+                "features": "",
                 "occupation": ["Student"],
                 "origin": ["Weird Science"],
                 "teams": "Champions, Spider-Army",
@@ -157,5 +157,42 @@
                 "history": "Despite his obvious brilliance, Hank McCoy was expelled from college because of his mutant status. Shortly thereafter, he was recruited by Professor Xavier to become a founding member of the X-Men.\n\nHank was born with super-strength, agility and intelligence, but he acquired his trade-mark blue fur during a brief sabbatical from the X-Men, when he ingested an experimental serum designed to activate latent mutations. He's temporarily morphed into other forms since, but he always seems to return to the bushy blue Beast he's best known as.\n\nHank is widely regarded as one of the world's greatest scientists and super heroes. In recent years, he's taken on more of a leadership role among the X-Men and mutant society at large, becoming the leader of X-Force.",
                 "personality": "Though something of a hothead in his youth, Hank developed a more stringently logical demeanor. If anything, the modern Beast has become impersonal, seeing his allies more as assets than people."
         }
+    },
+    {
+        "id": "thor",
+        "name": "Thor (Thor Odinson)",
+        "rank": 5,
+        "melee": 8,
+        "agility": 4,
+        "resilience": 8,
+        "vigilance": 2,
+        "ego": 5,
+        "logic": 0,
+        "image": "/img/thor.png",
+        "powers": {
+                "Basic": ["Discipline 1", "Flight 2", "Iconic Weapon", "Mighty 4", "Sturdy 2"],
+                "Elemental Control (Electricity)": ["Elemental Barrage", "Elemental Blast", "Elemental Burst", "Elemental Push"],
+                "Weather Control": ["Control Weather 4", "Thunder", "Weather Chill", "Weather Warm"]
+        },
+        "traits": ["Big", "Clueless", "Combat Expert", "Combat Reflexes", ["Connections", "Outsiders"], "Enhanced Physique", "Extra Occupation", "Fresh Eyes", "God Heritage", "Presence", "Stranger"],
+        "tags": ["Authority", ["Enemy", "Gorr the God Butcher"], "Heroic", "Powerful", "Public Identity", "Supernatural", "Worshipped"],
+        "biography": {
+                "name": "Thor Odinson",
+                "height": "6'6\"",
+                "weight": "640 lbs.",
+                "gender": "Male",
+                "eyes": "Blue",
+                "hair": "Blond",
+                "size": "Big",
+                "features": "",
+                "occupation": ["Leader", "Outsider"],
+                "origin": ["Mythic: Asgardian"],
+                "teams": "Gods of Asgard, Avengers, God Squad",
+                "base": "Asgard",
+                "history": "As the son of Odin—ruler of the Asgardian gods—Thor was destined for greatness. Raised alongside his adopted brother, Loki—the God of Mischief—Thor had many adventures as a youth. When Odin realized Thor needed to learn humility, he erased Thor's memories and sent him to Earth as a medical student Donald Blake. After learning his lesson, he recovered his powers and memories, and served both Asgard and Earth as Thor. After Thor (and a number of variants) defeated Malekith in the War of the Realms, he became the new All-Father of Asgard. Ruling over his people does not suit the thunder god, well as he prefers to be an active hero instead.",
+                "personality": "Thor can be grim when faced with his responsibilities, but he feels most himself when given something he can strike with his enchanted hammer, Mjolnir—preferably a worthy foe. There is little he enjoys more than a drink after a well-fought battle. Despite all his time on Earth—and in America—he still speaks with an Asgardian accent and often in an old-fashioned way."
+                
+        },
+        "iconicWeapon": "Mjolnir"
     }
 ]

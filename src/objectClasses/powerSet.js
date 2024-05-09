@@ -1,9 +1,12 @@
 import Power from './power';
 
 export default class PowerSet {
-    constructor(name, powers) {
+    constructor(name, powers, iconicWeapon) {
         this.name = name;
-        this.powers = powers.map((power) => {return new Power(power)});
+        this.powers = powers.map((power) => {
+            if (iconicWeapon) {return new Power(power, iconicWeapon)}
+            return new Power(power);
+        });
     }
 
     hasPower(name) {

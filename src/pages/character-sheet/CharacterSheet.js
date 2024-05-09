@@ -8,6 +8,7 @@ import PowersSection from "../../components/character-sheet/Powers/PowersSection
 import Damage from "../../components/character-sheet/Damage";
 import BasicActions from "../../components/character-sheet/BasicActions";
 import TraitsTagsSection from "../../components/character-sheet/TraitsTags/TraitsTagsSections";
+import Biography from "../../components/character-sheet/Biography/Biography";
 
 
 function CharacterSheet() {
@@ -33,6 +34,7 @@ function CharacterSheet() {
             <hr />
             <TraitsTagsSection />
             <hr />
+            <Biography />
             {/* <p>{character.biography.history}</p> */}
         </statsContext.Provider>
     </div>

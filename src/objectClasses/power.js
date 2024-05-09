@@ -1,7 +1,8 @@
 import powerRules from '../Data-Files/powers.json';
+import iconicWeaponFile from '../Data-Files/iconic-weapons.json';
 
 export default class Power {
-    constructor(powerName) {
+    constructor(powerName, iconicWeaponName) {
         const powerData = powerRules.filter((power) => power.name == powerName)[0]
         this.name = powerData.name;
         this.summary = powerData.summary;
@@ -14,5 +15,14 @@ export default class Power {
         this.cost = powerData.cost;
         this.effect = powerData.effect;
         this.integrated = powerData.integrated;
+
+        if (iconicWeaponName && this.name === "Iconic Weapon") {
+            const iconicWeaponData = iconicWeaponFile.filter((weapon) => weapon.name == iconicWeaponName)[0]
+            this.iconicWeaponName = iconicWeaponName;
+            this.name = this.name + ": " + this.iconicWeaponName;
+            this.combatRules = iconicWeaponData.combatRules;
+            this.narrativeRules = iconicWeaponData.narrativeRules;
+            this.integrated = iconicWeaponData.integrated;
+        }
     }
 }

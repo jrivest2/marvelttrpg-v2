@@ -17,10 +17,12 @@ export default class Character {
         this.vigilance = characterData.vigilance;
         this.ego = characterData.ego;
         this.logic = characterData.logic;
+        this.iconicWeapon = characterData.iconicWeapon ? characterData.iconicWeapon : null;
         
         this.powerSets = characterData.hasClassObjects ? characterData.powers : Object.entries(characterData.powers).map((powerSet) => {
             const [name, powers] = powerSet;
-            return new PowerSet(name, powers)
+            if (this.iconicWeapon) return new PowerSet(name, powers, this.iconicWeapon);
+            return new PowerSet(name, powers);
         })
         this.traits = characterData.hasClassObjects ? characterData.traits : characterData.traits.map((trait) => {return new Trait(trait)})
         this.tags = characterData.hasClassObjects ? characterData.tags : characterData.tags.map((tag) => {return new Tag(tag)})
@@ -373,6 +375,7 @@ export default class Character {
         logicDamageModifier: this.logicDamageModifier,
 
         powers: this.powerSets,
+        iconicWeapon: this.iconicWeapon,
         traits: this.traits,
         tags: this.tags,
         biography: this.biography,
