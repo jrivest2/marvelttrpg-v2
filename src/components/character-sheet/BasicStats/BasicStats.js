@@ -150,7 +150,7 @@ export default function BasicStats() {
                 
                 <br />
                 
-                <ClickRuleSplitTitlePartialClick title={["Karma", <><button onClick={handleKarmaMinusClick}>-</button> {character.karma} <button onClick={handleKarmaPlusClick}>+</button> <button onClick={handleKarmaResetClick} style={{"marginLeft": "15px"}}>Reset Karma</button></>]}>
+                <ClickRuleSplitTitlePartialClick title={["Karma", <><button onClick={handleKarmaMinusClick} style={{"marginRight": "5px"}}>-</button> {character.karma} <button onClick={handleKarmaPlusClick} style={{"marginLeft": "5px"}}>+</button> <button onClick={handleKarmaResetClick} style={{"marginLeft": "15px"}}>Reset Karma</button></>]}>
                 <div className="title"><b>Karma</b></div>
                     <div><i>Karma</i> represents that wild mix of luck, grit and destiny that seems to intervene in the lives of heroes. All heroes have Karma equal to their rank. To be considered a hero, the character has to have the tag "Heroic".</div>
                     <br></br>

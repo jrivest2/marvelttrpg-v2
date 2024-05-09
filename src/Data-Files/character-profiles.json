@@ -16,6 +16,42 @@
         "biography": {}
     },
     {
+        "id": "beast",
+        "name": "Beast (Hank McCoy)",
+        "rank": 4,
+        "melee": 3,
+        "agility": 4,
+        "resilience": 2,
+        "vigilance": 2,
+        "ego": 3,
+        "logic": 6,
+        "image": "/img/beast.png",
+        "powers": {
+                "Basic": ["Brilliance 1", "Inspiration", "Mighty 2", "Sturdy 1", "Uncanny 1"],
+                "Martial Arts": ["Attack Stance", "Chain Strikes", "Defense Stance", "Do This All Day", "Fast Strikes", "Leg Sweep"],
+                "Super Strength": ["Banging Heads", "Jump 1"],
+                "Tactics": ["Battle Plan", "Change of Plans", "Combat Support"]
+        },
+        "traits": ["Big", "Clinician", "Combat Reflexes", "Free Running", "Inventor", "Scientific Expertise"],
+        "tags": ["Extreme Appearance", "Heroic", "Hounded", "Krakoan", "Lab Access", "Public Identity", "X-Gene"],
+        "biography": {
+                "name": "Henry Philip \"Hank\" McCoy",
+                "height": "5'11\"",
+                "weight": "402 lbs.",
+                "gender": "Male",
+                "eyes": "Blue",
+                "hair": "Covered with blue fur",
+                "size": "Big",
+                "features": "Pointed teeth and ears, claws, blue fur",
+                "occupation": ["Scientist"],
+                "origin": ["Mutant"],
+                "teams": "Avengers, X-Men, X-Force",
+                "base": "Krakoa",
+                "history": "Despite his obvious brilliance, Hank McCoy was expelled from college because of his mutant status. Shortly thereafter, he was recruited by Professor Xavier to become a founding member of the X-Men.\n\nHank was born with super-strength, agility and intelligence, but he acquired his trade-mark blue fur during a brief sabbatical from the X-Men, when he ingested an experimental serum designed to activate latent mutations. He's temporarily morphed into other forms since, but he always seems to return to the bushy blue Beast he's best known as.\n\nHank is widely regarded as one of the world's greatest scientists and super heroes. In recent years, he's taken on more of a leadership role among the X-Men and mutant society at large, becoming the leader of X-Force.",
+                "personality": "Though something of a hothead in his youth, Hank developed a more stringently logical demeanor. If anything, the modern Beast has become impersonal, seeing his allies more as assets than people."
+        }
+    },
+    {
         "id": "doctor-octopus",
         "name": "Doctor Octopus (Otto Octavius)",
         "rank": 4,
@@ -50,6 +86,79 @@
                 "base": "New York City",
                 "history": "Everything changed for brilliant scientist Otto Octavius after a lab experiment gone wrong drove him mad and left him with mental control of four powerful arms. With these powerful limbs at his disposal, Octavius decided to finance his future research through crime, becoming the super villain Doctor Octopus.\n\nDoc Ock's life has been intertwined with that of his one-time admirer Peter Parker (Spider-Man). Ock has fought Spider-Man countless times, romanced Parker's Aunt May and even become Parker himself for a brief period. As more multiversal variants of Spider-Man appear, more versions of Doc Ock have also manifested themselves.",
                 "personality": "Doctor Octopus is a Grade-A narcissist. He considers his scientific endeavors to be of the greatest importance to humanity, and he is not above robbing, hurting and even killing others in the pursuit of his research."
+        }
+    },
+    {
+        "id": "green-goblin",
+        "name": "Green Goblin (Norman Osborn)",
+        "rank": 4,
+        "melee": 5,
+        "agility": 5,
+        "resilience": 4,
+        "vigilance": 2,
+        "ego": 1,
+        "logic": 3,
+        "image": "/img/green-goblin.png",
+        "powers": {
+                "Basic": ["Accuracy 1", "Combat Trickery", "Flight 2", "Healing Factor", "Inspiration", "Mighty 2", "Sturdy 1"],
+                "Elemental Control (Energy)": ["Elemental Blast", "Elemental Burst"],
+                "Super Strength": ["Banging Heads", "Clobber", "Crushing Grip", "Quick Toss"],
+                "Tactics": ["Battle Plan", "Change of Plans"]
+        },
+        "traits": [["Connections", "Celebrities"], ["Connections", "Criminal"], "Dealmaker", "Extra Occupation", "Famous", "Inventor", "Tech Reliance", "Weird"],
+        "tags": ["Black Market Access", ["Enemy", "Spider-Man"], "Headquarters", "Rich", "Secret Identity", "Streetwise", "Villainous", ["Signature Weapon", "Pumpkin Bombs (frag grenades)"]],
+        "biography": {
+                "name": "Norman Osborn",
+                "height": "5'11\"",
+                "weight": "185 lbs.",
+                "gender": "Male",
+                "eyes": "Green",
+                "hair": "Auburn",
+                "size": "Average",
+                "features": "",
+                "occupation": ["Criminal", "Tycoon"],
+                "origin": ["Weird Science"],
+                "teams": "Dark Avengers, Goblin Nation, Sinister Six, Thunderbolts",
+                "base": "New York City",
+                "history": "From an early age, Norman Osborn had a relentless drive to succeed. Using notes stolen from his business partner, Osborn developed the Goblin Formula to give himself superhuman powers. It also transformed Osborn into the Green Goblin—and set him on the road to insanity. He decided to use these powers to establish himself as the criminal leader of New York City. While doing so, he became enemies with Spider-Man (Peter Parker), who he later discovered to be his son Harry's best friend. Although he seems to have died several times, Osborn keeps returning, apparently fated to be a constant thorn in Spider-Man's side.",
+                "personality": "Osborn is a smooth operator, a wealthy, powerful and sharp schemer who is often several steps ahead of his foes. He is often cool and collected—right up until something frustrates his plans, at which point he becomes unhinged."
+        }
+        
+    },
+    {
+        "id": "scarlet-witch",
+        "name": "Scarlet Witch",
+        "rank": 5,
+        "melee": 2,
+        "agility": 2,
+        "resilience": 3,
+        "vigilance": 5,
+        "ego": 8,
+        "logic": 5,
+        "image": "/img/scarlet-witch.png",
+        "powers": {
+                "Basic": ["Discipline 2", "Flight 2"],
+                "Magic (Chaos)": ["Hex Bolt", "Jinx", "Powerful Hex", "Probability-Manipulation Hex", "Protection Hex"],
+                "Magic (Sorcery)": ["Astral Form", "Bolts of Balthakk", "Crimson Bands of Cyttorak", "Dispel Spell", "Flames of the Faltine", "Images of Ikonn", "Mists of Morpheus", "Shield of the Seraphim", "Summon Portal", "Winds of Watoomb"],
+                "Power Control": ["Boost Powers", "Dampen Power"]
+        },
+        "traits": ["Combat Expert", ["Connections", "Super Heroes"], "Dealmaker", "Extraordinary Origin", "Fearless", "Font of Information", "Situational Awareness", "Weird"],
+        "tags": ["Black Market Access", "Chaotic", "Heroic", "Hounded", "Public Identity", "Sorcerous", "Supernatural"],
+        "biography": {
+                "name": "Wanda Maximoff",
+                "height": "5'7\"",
+                "weight": "132 lbs.",
+                "gender": "Female",
+                "eyes": "Green",
+                "hair": "Auburn",
+                "size": "Average",
+                "features": "",
+                "occupation": ["Adventurer"],
+                "origin": ["Weird Science", "Magic: Chaos Magic"],
+                "teams": "Brotherhood of Evil Mutants, X-Men",
+                "base": "Krakoa",
+                "history": "As infants, Wanda Maximoff and her twin brother, Pietro, were subjected to dangerous experiments, and as they aged, they began to exhibit strange powers. Wanda developed powerful magic, while Pietro developed superhuman speed. Superstitious villagers were about to kill the twins when Magneto saved them and invited them to join his Brotherhood of Evil Mutants as Quicksilver and the Scarlet Witch.\n\nThe twins later renounced such evil and became early members of the Avengers. As part of the team, Scarlet Witch met and fell in love with the Vision, with whom she had two children. When that went wrong, she broke down and unleashed the full powers of her chaos magic with disastrous results. She has since recovered and works to redeem herself.",
+                "personality": "Although good at heart, Scarlet Witch has suffered repeated bouts of mental illness. When she is stable, she is kind, warm and friendly."
         }
     },
     {
@@ -123,40 +232,41 @@
         }
     },
     {
-        "id": "beast",
-        "name": "Beast (Hank McCoy)",
-        "rank": 4,
+        "id": "squirrel-girl",
+        "name": "Squirrel Girl",
+        "rank": 3,
         "melee": 3,
-        "agility": 4,
+        "agility": 3,
         "resilience": 2,
         "vigilance": 2,
-        "ego": 3,
-        "logic": 6,
-        "image": "/img/beast.png",
+        "ego": 6,
+        "logic": 1,
+        "image": "/img/squirrel-girl.png",
         "powers": {
-                "Basic": ["Brilliance 1", "Inspiration", "Mighty 2", "Sturdy 1", "Uncanny 1"],
-                "Martial Arts": ["Attack Stance", "Chain Strikes", "Defense Stance", "Do This All Day", "Fast Strikes", "Leg Sweep"],
-                "Super Strength": ["Banging Heads", "Jump 1"],
-                "Tactics": ["Battle Plan", "Change of Plans", "Combat Support"]
+                "Basic": ["Heightened Senses 1", "Inspiration", "Mighty 2"],
+                "Spider Powers": ["Jump 1", "Wallcrawling"],
+                "Super Strength": ["Banging Heads", "Clobber"],
+                "Telepathy": [["Animal Bond", "Tippy-Toe"], ["Animal Communication", "Squirrels"]]
         },
-        "traits": ["Big", "Clinician", "Combat Reflexes", "Free Running", "Inventor", "Scientific Expertise"],
-        "tags": ["Extreme Appearance", "Heroic", "Hounded", "Krakoan", "Lab Access", "Public Identity", "X-Gene"],
+        "traits": ["Combat Reflexes", "Glibness", "Honest", "Quick Learner"],
+        "tags": ["Extreme Appearance", "Heroic", ["Mentor", "Nancy Whitehead"], "Mysterious", ["Obligation", "School"], "Public Identity"],
         "biography": {
-                "name": "Henry Philip \"Hank\" McCoy",
-                "height": "5'11\"",
-                "weight": "402 lbs.",
-                "gender": "Male",
-                "eyes": "Blue",
-                "hair": "Covered with blue fur",
-                "size": "Big",
-                "features": "Pointed teeth and ears, claws, blue fur",
-                "occupation": ["Scientist"],
-                "origin": ["Mutant"],
-                "teams": "Avengers, X-Men, X-Force",
-                "base": "Krakoa",
-                "history": "Despite his obvious brilliance, Hank McCoy was expelled from college because of his mutant status. Shortly thereafter, he was recruited by Professor Xavier to become a founding member of the X-Men.\n\nHank was born with super-strength, agility and intelligence, but he acquired his trade-mark blue fur during a brief sabbatical from the X-Men, when he ingested an experimental serum designed to activate latent mutations. He's temporarily morphed into other forms since, but he always seems to return to the bushy blue Beast he's best known as.\n\nHank is widely regarded as one of the world's greatest scientists and super heroes. In recent years, he's taken on more of a leadership role among the X-Men and mutant society at large, becoming the leader of X-Force.",
-                "personality": "Though something of a hothead in his youth, Hank developed a more stringently logical demeanor. If anything, the modern Beast has become impersonal, seeing his allies more as assets than people."
+                "name": "Doreen Green",
+                "height": "5'3\"",
+                "weight": "135 lbs.",
+                "gender": "Female",
+                "eyes": "Brown",
+                "hair": "Brown",
+                "size": "Average",
+                "features": "Squirrel Tail",
+                "occupation": ["Student"],
+                "origin": ["Unknown"],
+                "teams": "Great Lakes Avengers, S.H.I.E.L.D.",
+                "base": "New York City",
+                "history": "Born with the proportionate speed and strength of a squirrel, Doreen Green has been fighting super villains since she was 14. In less than a decade, Squirrel Girl has personally prevented worldwide disaster at the hands of villains as powerful as Thanos and Galactus. Squirrel Girl's exploits have never made her famous, in no small part because people in the media tend to find her squirrel powers a little silly. While Green can communicate with all sorts of squirrels, she has a special bond with one she named Tippy-Toe, who has fought crime by her side for the longest.\nMore recently, Green has enrolled in the computer science program at Empire State University. Despite her collegiate studies, Green still finds the time to help protect the people of NYC.",
+                "personality": "Relentlessly happy-go-lucky, Doreen Green has a lot of faith in the goodness of others, even  villains. She prefers to solve problems without violence if it can be helped, and she's talked villains out of committing crimes about as often as she's actually defeated them. Green's ideal world would be one in which everyone could just chill out with one another peacefully."
         }
+        
     },
     {
         "id": "thor",

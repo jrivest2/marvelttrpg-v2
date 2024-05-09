@@ -3,8 +3,15 @@ import iconicWeaponFile from '../Data-Files/iconic-weapons.json';
 
 export default class Power {
     constructor(powerName, iconicWeaponName) {
-        const powerData = powerRules.filter((power) => power.name == powerName)[0]
-        this.name = powerData.name;
+        let powerData = {}
+        if (typeof(powerName) === "object") {
+            powerData = powerRules.filter((power) => power.name == powerName[0])[0];
+            this.name = powerName[0] + ": " + powerName[1];
+        }
+        else {
+            powerData = powerRules.filter((power) => power.name == powerName)[0];
+            this.name = powerData.name;
+        }
         this.summary = powerData.summary;
         this.set = powerData.set;
         this.prerequisites = powerData.prerequisites;
