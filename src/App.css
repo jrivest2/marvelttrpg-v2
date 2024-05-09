@@ -124,6 +124,10 @@ section img {
     margin-right: 10%;
 }
 
+.power-duration {
+    margin-top: 10px;
+}
+
 .power-effect {
     margin-top: 10px;
     margin-left: 10%;
@@ -134,6 +138,19 @@ section img {
     margin-top: 15px;
     margin-left: 10%;
     margin-right: 10%;
+}
+
+.power-iconic-weapon {
+    margin-top: 10px;
+    font-size: larger;
+}
+
+.iconic-weapon-combat-rules {
+    margin-top: 5px;
+}
+
+.iconic-weapon-narrative-rules {
+    margin-top: 10px;
 }
 
 .trait-name {

@@ -293,6 +293,12 @@ export default class Character {
         "Brilliance 3": () => {this.addLogicNonCombat(3); this.addLogicDamageMultiplier(3)},
         "Brilliance 4": () => {this.addLogicNonCombat(4); this.addLogicDamageMultiplier(4)},
 
+        //Iconic Weapon Combat Rules
+        "+1 Melee Damage Multiplier": () => {if (1 + this.rank > this.meleeDamageModifier) this.addMeleeDamageMultiplier(1)},
+        "+1 Agility Damage Multiplier": () => {if (1 + this.rank > this.agilityDamageModifier) this.addAgilityDamageMultiplier(1)},
+        "+1 Ego Damage Multiplier": () => {if (1 + this.rank > this.egoDamageModifier) this.addEgoDamageMultiplier(1)},
+        "+1 Logic Damage Multiplier": () => {if (1 + this.rank > this.logicDamageModifier) this.addLogicDamageMultiplier(1)},
+
         "Sturdy 1": () => {this.healthDamageReduction = 1},
         "Sturdy 2": () => {this.healthDamageReduction = 2},
         "Sturdy 3": () => {this.healthDamageReduction = 3},
@@ -309,8 +315,16 @@ export default class Character {
     }
     this.powerSets.forEach(powerSet => powerSet.powers.forEach((power) => {
         if (power.name in powersThatChangeStats) {
-            const func = powersThatChangeStats[power.name]
+            const func = powersThatChangeStats[power.name];
             func()
+        }
+        else if (power.name.includes("Iconic Weapon")) {
+            power.combatRules.forEach((rule) => {
+                if (rule in powersThatChangeStats) {
+                    const func = powersThatChangeStats[rule];
+                    func()
+                }
+            })
         }
     }))
     

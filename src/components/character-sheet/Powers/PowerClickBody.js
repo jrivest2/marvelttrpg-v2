@@ -40,10 +40,13 @@ export default function PowerClickBody({power, subPower}) {
                             return <div key={index} className="power-integrated">This power's effects have yet been <b>COMPLETELY</b> integrated into the website.</div>;
                     }
                 case "iconicWeaponName":
-                    return <div key={index} className="power-iconic-weapon"><b>{value}</b></div>
+                    return <div key={index} className="power-iconic-weapon"><b>Weapon: {value}</b></div>
                 case "combatRules":
                     const combatRulesOutput = value.map((rule, index2) => {return <div key={index2} className="iconic-weapon-rule">{rule}</div>});
-                    return <div key={index} className="iconic-weapon-combat-rules">Combat Rules: {combatRulesOutput}</div>
+                    return <div key={index} className="iconic-weapon-combat-rules"><b>Combat Rules</b>: {combatRulesOutput}</div>
+                case "narrativeRules":
+                    const narrativeRulesOutput = value.map((rule, index2) => {return <div key={index2} className="iconic-weapon-rule">{rule}</div>});
+                    return <div key={index} className="iconic-weapon-narrative-rules"><b>Narrative Rules</b>: {narrativeRulesOutput}</div>
             }
         }
     })

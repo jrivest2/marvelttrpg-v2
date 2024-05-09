@@ -14,8 +14,7 @@ export default class Power {
         this.range = powerData.range;
         this.cost = powerData.cost;
         this.effect = powerData.effect;
-        this.integrated = powerData.integrated;
-
+        
         if (iconicWeaponName && this.name === "Iconic Weapon") {
             const iconicWeaponData = iconicWeaponFile.filter((weapon) => weapon.name == iconicWeaponName)[0]
             this.iconicWeaponName = iconicWeaponName;
@@ -24,5 +23,6 @@ export default class Power {
             this.narrativeRules = iconicWeaponData.narrativeRules;
             this.integrated = iconicWeaponData.integrated;
         }
+        else this.integrated = powerData.integrated;
     }
 }
