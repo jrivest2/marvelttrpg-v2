@@ -199,8 +199,9 @@ section img {
 }
 
 .bio-grid {
+    justify-content: center;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(75px, 150px) minmax(75px, 150px);
     grid-template-rows: minmax(30px, max-content) minmax(30px, max-content) minmax(30px, max-content);
     margin-bottom: 10px;
     margin-top: 10px;
@@ -282,6 +283,14 @@ section img {
 
 @media screen and (max-width: 420px) {
     .stats-input button {
+        margin-top: 10px;
+    }
+    .bio-grid {
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: minmax(30px, max-content) minmax(30px, max-content) minmax(30px, max-content);
+        margin-bottom: 10px;
         margin-top: 10px;
     }
 }
