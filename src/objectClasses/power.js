@@ -5,11 +5,11 @@ export default class Power {
     constructor(powerName, iconicWeaponName) {
         let powerData = {}
         if (typeof(powerName) === "object") {
-            powerData = powerRules.filter((power) => power.name == powerName[0])[0];
+            powerData = powerRules.filter((power) => power.name === powerName[0])[0];
             this.name = powerName[0] + ": " + powerName[1];
         }
         else {
-            powerData = powerRules.filter((power) => power.name == powerName)[0];
+            powerData = powerRules.filter((power) => power.name === powerName)[0];
             this.name = powerData.name;
         }
         this.summary = powerData.summary;
@@ -23,7 +23,7 @@ export default class Power {
         this.effect = powerData.effect;
         
         if (iconicWeaponName && this.name === "Iconic Weapon") {
-            const iconicWeaponData = iconicWeaponFile.filter((weapon) => weapon.name == iconicWeaponName)[0]
+            const iconicWeaponData = iconicWeaponFile.filter((weapon) => weapon.name === iconicWeaponName)[0]
             this.iconicWeaponName = iconicWeaponName;
             this.name = this.name + ": " + this.iconicWeaponName;
             this.combatRules = iconicWeaponData.combatRules;

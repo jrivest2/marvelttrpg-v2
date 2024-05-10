@@ -52,6 +52,78 @@
         }
     },
     {
+        "id": "black-widow",
+        "name": "Black Widow (Natasha Romanoff)",
+        "rank": 3,
+        "melee": 2,
+        "agility": 4,
+        "resilience": 2,
+        "vigilance": 3,
+        "ego": 4,
+        "logic": 1,
+        "image": "/img/black-widow.png",
+        "powers": {
+                "Basic": ["Inspiration", "Slow-Motion Dodge"],
+                "Martial Arts": ["Attack Stance", "Counterstrike Technique", "Defense Stance", "Unflappable Poise"],
+                "Ranged Weapons": ["Snap Shooting", "Sniping", "Weapons Blazing"],
+                "Tactics": ["Change of Plans", "Combat Support"]
+        },
+        "traits": ["Beguiling", ["Connections", "Espionage"], "Determination", "Free Running", "Leverage", "Sneaky"],
+        "tags": ["Black Market Access", "Heroic", "Public Identity", ["Linguist", "Chinese, English, French, German, Japanese, Russian"]],
+        "biography": {
+                "name": "Natasha Romanoff",
+                "height": "5'7\"",
+                "weight": "131 lbs.",
+                "gender": "Female",
+                "eyes": "Blue",
+                "hair": "Red",
+                "size": "Average",
+                "features": "",
+                "occupation": ["Spy"],
+                "origin": ["Special Training"],
+                "teams": "Avengers, Infinity Watch, S.H.I.E.L.D.",
+                "base": "Mobile",
+                "history": "Trained from a young age to be a Russian special agent, Natasha Romanoff defected to the United States after clashing with the Avengers. Since then, Natasha has served as a vital ally to many of the most powerful organizations on the planet, particularly S.H.I.E.L.D and the Avengers.\nNatasha spent much of her career as a solo mercenary, doing high-level black ops for paying clients. She tries to never take a job she believes to be immoral, but in the world of espionage, things are not always so clear-cut.",
+                "personality": "Charming and cool-headed, Natasha's personality makes her an excellent spy. A life of espionage has made her slow to trust others, but those closest to her consider her a good friend and an exceptional team leader."
+        }
+    },
+    {
+        "id": "captain-america",
+        "name": "Captain America (Steve Rogers)",
+        "rank": 4,
+        "melee": 6,
+        "agility": 4,
+        "resilience": 3,
+        "vigilance": 3,
+        "ego": 2,
+        "logic": 2,
+        "image": "/img/captain-america.png",
+        "powers": {
+                "Basic": ["Iconic Weapon", "Inspiration", "Mighty 1"],
+                "Shield Bearer": ["Brace for Impact", "Do This All Day", "Hurled Shield Bash", "Hurled Shield Block", "Hurled Shield Deflection", "Immovable", "Rico-Shield", "Shield 3", "Shield Bash", "Shield Deflection", "Shield Wall"],
+                "Tactics": ["Change of Plans", "Combat Support"]
+        },
+        "traits": ["Battle Ready", "Beguiling", "Combat Expert", "Combat Reflexes", ["Connections", "Military"], "Public Speaking", "Situational Awareness", "Weird"],
+        "tags": [["Enemy", "Hydra"],["Enemy", "Red Skull"], "Heroic", "Public Identity"],
+        "biography": {
+                "name": "Steve Rogers",
+                "height": "6'2\"",
+                "weight": "240 lbs.",
+                "gender": "Male",
+                "eyes": "Blue",
+                "hair": "Blond",
+                "size": "Average",
+                "features": "",
+                "occupation": ["Military"],
+                "origin": ["Weird Science"],
+                "teams": "Avengers, S.H.I.E.L.D., U.S. Army",
+                "base": "Avengers Mountain",
+                "history": "At the dawn of World War II, scrawny Steve Rogers was rejected by the U.S. Army as unfit for service, but Dr. Abraham Erskine saw something in him and selected him for the first human trials for his Super-Soldier Serum. A Nazi sympathizer assassinated Erskine during the procedure, but not before Rogers was improved to the peak of human physical ability. As Captain America, Rogers fought Nazis on the front lines in Europe, alongside his sidekick Bucky Barnes—right up until 1945 when they were presumed killed while stopping a plot by the evil Baron Zemo.\nDecades later, the newly formed Avengers found Rogers frozen in a block of ice and revived him. He immediately leaped back into action, defending American ideals and saving the entire planet again and again.",
+                "personality": "Rogers is serious about helping people out, and he's a natural leader, both in and out of combat. He knows that when he's in his costume and carrying his shield he represents everything that is great about the land and people he loves so much."
+        },
+        "iconicWeapon": "Captain America's Shield"
+    },
+    {
         "id": "doctor-octopus",
         "name": "Doctor Octopus (Otto Octavius)",
         "rank": 4,
@@ -89,6 +161,41 @@
         }
     },
     {
+        "id": "ghost-spider",
+        "name": "Ghost-Spider",
+        "rank": 4,
+        "melee": 4,
+        "agility": 6,
+        "resilience": 3,
+        "vigilance": 3,
+        "ego": 2,
+        "logic": 2,
+        "image": "/img/ghost-spider.png",
+        "powers": {
+                "Basic": ["Combat Trickery", "Disguise", "Environmental Protection", "Evasion", "Inspiration", "Mighty 1"],
+                "Omniversal Travel": ["Multiversal Portal", "Multiversal Travel", "Multiversal Travel Together"],
+                "Spider Powers": ["Jump 1", "Spider-Dodge", "Spider-Sense", "Spider-Strike", "Wallcrawling", "Webcasting", "Webgrabbing", "Webslinging", "Webtrapping"]
+        },
+        "traits": ["Audience", "Free Running", "Investigation", "Quick Learner", ["Tech Reliance", ["Sentient Suit", "Ticket to the Multiverse"]], "Weird"],
+        "tags": ["Heroic", ["Mentor", "George Stacy"], ["Obligation", "School"], ["Public Identity", "(Earth-65)"]],
+        "biography": {
+                "name": "Gwen Stacy",
+                "height": "5'5\"",
+                "weight": "125 lbs.",
+                "gender": "Female",
+                "eyes": "Blue",
+                "hair": "Blond",
+                "size": "Average",
+                "features": "",
+                "occupation": ["Student"],
+                "origin": ["Weird Science"],
+                "teams": "Spider-Army, Web-Warriors",
+                "base": "New York City",
+                "history": "On Earth-65, teenager Gwen Stacy was bitten by a genetically engineered spider and gained spider-based powers. Soon after, she became her world's costumed crime-fighting Spider-Woman. In an early adventure, she battled her friend Peter Parker—who had not acquired spider-powers in this universe but had turned himself into the Lizard in an attempt to become a hero like Spider-Woman—and accidentally killed him, a mistake she has been trying to make up for since.\nAfter being drawn into the multiversal battle of Spider-Totems against the murderous Inheritors, Stacy began traveling among worlds, particularly between her own and Earth-616. After surviving the battle with the Inheritors, she took on the name Ghost-Spider. Her identity has become public in her universe, but she enjoys anonymity she often finds in other worlds.\nAt one point, Stacy lost her spider-powers, but she regained them after bonding with a sentient costume made of synthetic spiders. She also has a pendant/bracelet called the Ticket to the Multiverse that allows her to move between worlds.",
+                "personality": "Stacy is smart and friendly, an independent free spirit who enjoys playing drums in her rock band, the Mary Janes. Growing up the daughter of police detective George Stacy helped instill a strong sense of justice in her, and she tries to live up to her own ideals every day. She doesn't always manage it, but she's determined to keep making the effort."
+        }
+    },
+    {
         "id": "green-goblin",
         "name": "Green Goblin (Norman Osborn)",
         "rank": 4,
@@ -123,7 +230,6 @@
                 "history": "From an early age, Norman Osborn had a relentless drive to succeed. Using notes stolen from his business partner, Osborn developed the Goblin Formula to give himself superhuman powers. It also transformed Osborn into the Green Goblin—and set him on the road to insanity. He decided to use these powers to establish himself as the criminal leader of New York City. While doing so, he became enemies with Spider-Man (Peter Parker), who he later discovered to be his son Harry's best friend. Although he seems to have died several times, Osborn keeps returning, apparently fated to be a constant thorn in Spider-Man's side.",
                 "personality": "Osborn is a smooth operator, a wealthy, powerful and sharp schemer who is often several steps ahead of his foes. He is often cool and collected—right up until something frustrates his plans, at which point he becomes unhinged."
         }
-        
     },
     {
         "id": "scarlet-witch",
@@ -194,7 +300,6 @@
                 "history": "Bitten by a radioactive spider when he was in high school, Peter Parker gained a suite of spider-related powers. He exploited them for profit until he let a robber get away who later shot and killed his Uncle Ben in a botched burglary, driving home the lesson \"with great power there must also come great responsibility.\" Since then, Parker has dedicated himself to fighting crime and helping those who have less power than him.\n\nOver the years, Parker has been cloned, discovered one of his costumes was an alien symbiote and learned more about his deep connection to the Spider-Totem. At the same time, he's battled against the most colorful rogues' gallery around. Meanwhile, he's met up with several different variations of Spider-Man hailing from alternate dimensions, including the younger Miles Morales, also known as Spider-Man.",
                 "personality": "Parker is a genius who often lets his sense of responsibility get in the way of taking care of the basics of his life. He's known for his sharp wit and his wisecracking ways, which he often uses to enrage his foes. Despite the problems that often plague his personal life, it's rare that he lets feeling sorry for himself stop him from helping others, especially when he's in costume, webswinging through the city's streets."
         }
-        
     },
     {
         "id": "spider-man-miles",
@@ -266,7 +371,81 @@
                 "history": "Born with the proportionate speed and strength of a squirrel, Doreen Green has been fighting super villains since she was 14. In less than a decade, Squirrel Girl has personally prevented worldwide disaster at the hands of villains as powerful as Thanos and Galactus. Squirrel Girl's exploits have never made her famous, in no small part because people in the media tend to find her squirrel powers a little silly. While Green can communicate with all sorts of squirrels, she has a special bond with one she named Tippy-Toe, who has fought crime by her side for the longest.\nMore recently, Green has enrolled in the computer science program at Empire State University. Despite her collegiate studies, Green still finds the time to help protect the people of NYC.",
                 "personality": "Relentlessly happy-go-lucky, Doreen Green has a lot of faith in the goodness of others, even  villains. She prefers to solve problems without violence if it can be helped, and she's talked villains out of committing crimes about as often as she's actually defeated them. Green's ideal world would be one in which everyone could just chill out with one another peacefully."
         }
-        
+    },
+    {
+        "id": "star-lord",
+        "name": "Star-Lord",
+        "rank": 5,
+        "melee": 4,
+        "agility": 6,
+        "resilience": 5,
+        "vigilance": 4,
+        "ego": 3,
+        "logic": 3,
+        "image": "/img/star-lord.png",
+        "powers": {
+                "Basic": ["Accuracy 1", "Combat Trickery", ["Environmental Protection", "(space helmet)"], "Healing Factor", "Heightened Senses 1", "Iconic Weapon", "Inspiration", "Sturdy 1", "Wisecracker"],
+                "Elemental Control (Element Gun)": ["Elemental Barrage", "Elemental Blast", "Elemental Burst"],
+                "Illusion": ["Illumination"],
+                "Martial Arts": ["Attack Stance", "Defense Stance", "Do This All Day"],
+                "Telekinesis": ["Levitation"],
+                "Tactics": ["Battle Plan", "Change of Plans", "Combat Support"]
+        },
+        "traits": ["Combat Reflexes", ["Connections", "Super Heroes"], "Eidetic Memory", "Fearless", "Iron Will", "Piloting", "Tech Reliance"],
+        "tags": ["Alien Heritage", "Black Market Access", "Heroic", ["Linguist", "(translator implant)"], "Public Identity", "Streetwise"],
+        "biography": {
+                "name": "Peter Jason Quill",
+                "height": "6'2\"",
+                "weight": "175 lbs.",
+                "gender": "Male",
+                "eyes": "Blue",
+                "hair": "Blond",
+                "size": "Average",
+                "features": "Glowing left eye (formerly cybernetic), sun tattoo on right hand.",
+                "occupation": ["Adventurer"],
+                "origin": ["Alien"],
+                "teams": "Guardians of the Galaxy, United Front",
+                "base": "Mobile",
+                "history": "Quill grew up without a father, unaware that his mother, Meredith Quill, had conceived him during an affair with a humanoid alien named J'son, the heir to the interstellar Spartax Empire. As a young adult, he worked as a NASA mechanic, but after being fired, he stole a Kree spaceship and escaped to the stars. The space pirates known as the Ravagers found him stranded in space, and their leader, Yondu, allowed him to join their crew. He eventually turned against them and set out on his own, calling himself Star-Lord.\nQuill learned of his father's identity but refused to join him and rule Spartax. Instead, he helped defeat the massive galactic threats mounted by both  Annihilus and then Ultron, after which he formed a group of adventurers known as the Guardians of the Galaxy. Quill recently gained the title Master of the Sun (along with some new powers) and spent over a hundred years adventuring in another dimension before returning to his home reality.\nIn addition to his powers, Quill carries the Element Gun (which allows him to fire different elements), and he wears a space helmet that protects him in outer space, provides him with air to breathe, and allows him to remotely pilot a linked starship.",
+                "personality": "Quill is a natural leader who exudes confidence, even when it's unjustified. He thinks of himself as a principled thief, an outlaw with standards. Despite his disdain for rulers, when he found himself elected as the first president of Spartax, he rose to the occasion—until he was ousted and became an outlaw again.\nQuill is often wracked with guilt over the mistakes he's made, some of which have cost hundreds of thousands of lives, but he does his best to cover those with his bravado and his natural charm. Time has helped heal those wounds."
+        },
+        "iconicWeapon": "Element Gun"
+    },
+    {
+        "id": "thor-jane",
+        "name": "Thor (Jane Foster)",
+        "rank": 5,
+        "melee": 7,
+        "agility": 4,
+        "resilience": 4,
+        "vigilance": 3,
+        "ego": 3,
+        "logic": 4,
+        "image": "/img/thor-jane.png",
+        "powers": {
+                "Basic": ["Combat Trickery", "Discipline 2", "Flight 2", "Iconic Weapon", "Mighty 4", "Sturdy 2"],
+                "Elemental Control (Electricity)": ["Elemental Barrage", "Elemental Blast", "Elemental Burst", "Elemental Push", "Elemental Ricochet"],
+                "Weather Control": ["Control Fog", "Control Weather 4", "Thunder"]
+        },
+        "traits": ["Battle Ready", "Clinician", "Combat Reflexes", "Determination", "Enhanced Physique", "Extraordinary Origin", "Fearless", "First Aid", ["God Heritage", "via Mjolnir"], "Presence"],
+        "tags": [["Enemy", "Gorr the God Butcher"], "Heroic", "Secret Identity", "Supernatural", ["Worshipped", "as Thor"]],
+        "biography": {
+                "name": "Jane Foster",
+                "height": "5'7\"/5'9\"",
+                "weight": "135 lbs./450lbs.",
+                "gender": "Female",
+                "eyes": "Brown",
+                "hair": "Brown/Blond",
+                "size": "Average",
+                "features": "",
+                "occupation": ["Health Care Worker"],
+                "origin": ["Mythic: Asgardian", "Special Training"],
+                "teams": "Avengers",
+                "base": "New York City, Asgard",
+                "history": "Jane Foster served as a nurse for Doctor Donald Blake, the alter ego of Thor Odinson, with whom she fell in love. Thor's father, Odin, separated them, though, and Foster went on to become a doctor herself, as well as a wife and mother. She later divorced her husband, who retained custody of their son.\nWhile Foster battled breast cancer, Thor Odinson lost the ability to use his magic hammer, Mjolnir. The hammer reached out to Foster, who took possession of it and gained the power of Thor. Odinson gave his blessing and approved of Foster using the name Thor. Becoming Thor purged Foster's body of the chemotherapy drugs fighting her cancer, though and after a series of adventures that nearly killed her, she gave up being Thor and successfully fought her cancer. She later became a Valkyrie to help shepherd the souls of dead heroes to Valhalla.",
+                "personality": "Foster is smart, capable and determined, able to stand up to Asgardian gods. Life has not always been kind to her, but she's survived it all and come out more independent and capable than ever."
+        },
+        "iconicWeapon": "Mjolnir"
     },
     {
         "id": "thor",
@@ -304,5 +483,215 @@
                 
         },
         "iconicWeapon": "Mjolnir"
-    }
+    },
+    {
+        "id": "venom",
+        "name": "Venom (Eddie Brock)",
+        "rank": 4,
+        "melee": 6,
+        "agility": 5,
+        "resilience": 3,
+        "vigilance": 2,
+        "ego": 4,
+        "logic": 0,
+        "image": "/img/venom.png",
+        "powers": {
+                "Basic": ["Disguise", "Environmental Protection", "Healing Factor", "Heightened Senses 1", "Mighty 2"],
+                "Spider Powers": ["Jump 1", "Spider-Dodge", "Spider-Strike", "Wallcrawling", "Webcasting", "Webgliding", "Webgrabbing", "Webslinging", "Webtrapping"],
+                "Melee Weapons (Sharp)": ["Fast Attacks", "Vicious Attack", "Whirling Frenzy"]
+        },
+        "traits": [["Anathema", "Extreme Heat/Extreme Sonics"], "Audience", "Bloodthirsty", "Combat Reflexes", ["Connections", "Sources"], "Free Running", "Loner", "Pundit"],
+        "tags": ["Black Market Access", "Poor", "Public Identity", "Streetwise"],
+        "biography": {
+                "name": "Edward Charles Allan \"Eddie\" Brock",
+                "height": "6'3\"",
+                "weight": "260 lbs.",
+                "gender": "Male",
+                "eyes": "Blue",
+                "hair": "Blond",
+                "size": "Average",
+                "features": "Venom form has retractable claws, fangs and an unnaturally long tongue.",
+                "occupation": ["Journalist"],
+                "origin": ["Symbiote"],
+                "teams": "Sinister Six, Symbiote Hive",
+                "base": "New York City",
+                "history": "Eddie Brock was disgraced as a journalist after Spider-Man (Peter Parker) unknowingly discredited the biggest story of his career. Outcast and despondent, Eddie went to a church to pray for a way out. Unbeknownst to him, Spider-Man rid himself of the symbiote, it found and bonded itself to Eddie and the two vowed to take revenge on Spider-Man as Venom.\nEddie has since managed to rein in his anger and the symbiote's murderous tendencies. For a while, he parted from Venom and bonded with other symbiotes spawned from it—Anti-Venom and Toxin—but he eventually returned to the original.",
+                "personality": "Although he can still be murderously unstable, Eddie has softened over the years. These days, he's more concerned with becoming a hero in his own right and protecting his son, Dylan, who has also bonded with the Venom Symbiote."
+        } 
+    },
+    {
+        "id": "wasp",
+        "name": "Wasp (Janet Van Dyne)",
+        "rank": 4,
+        "melee": 3,
+        "agility": 4,
+        "resilience": 3,
+        "vigilance": 3,
+        "ego": 5,
+        "logic": 2,
+        "image": "/img/wasp.png",
+        "powers": {
+                "Basic": ["Flight 1", "Inspiration"],
+                "Elemental Control (Electricity)": ["Elemental Barrage", "Elemental Blast", "Elemental Burst"],
+                "Resize": ["Grow 2", "Growing Attack", "Shrink 3", "Shrinking Dodge"],
+                "Tactics": ["Battle Plan", "Change of Plans", "Combat Support", "Focus Fire", "Keep Moving"]
+        },
+        "traits": ["Combat Expert", ["Connections", "Celebrities"], "Famous", "Glibness", "Presence", "Public Speaking", "Tech Reliance"],
+        "tags": ["Heroic", "Public Identity", ["Linguist", "English, French, Hungarian, Italian, Spanish"], "Rich"],
+        "biography": {
+                "name": "Janet Van Dyne",
+                "height": "5'4\"",
+                "weight": "110 lbs.",
+                "gender": "Female",
+                "eyes": "Blue",
+                "hair": "Auburn",
+                "size": "Varies",
+                "features": "Cybernetic wings",
+                "occupation": ["Tycoon"],
+                "origin": ["High Tech: Pym Particles"],
+                "teams": "Agents of Wakanda, Avengers",
+                "base": "Mobile",
+                "history": "Born a wealthy heiress, Janet Van Dyne caught the bright eye of brilliant scientist Hank Pym. The two quickly became partners, in both crimefighting and romance. Hank developed a special substance called Pym Particles, allowing him to grow and shrink his body mass at will. Using them, Hank and Janet became the superheroes known as Ant-Man and the Wasp, founding members of the Avengers.\nEventually, the pair split, their marriage irreparably broken by Hank's often unstable and abusive behavior, but Janet never stopped being the Wasp. Over the years, she's become a shining example of true heroism for people everywhere, far surpassing her ex-husband as a trusted leader in the super-hero community.",
+                "personality": "Raised as a pampered socialite, Janet makes a surprisingly effective battle leader. However, her social skills also make her an excellent administrator. She takes an empathetic, understanding approach to tackling the problems of her allies and friends."
+        }  
+    },
+    {
+        "id": "wolverine",
+        "name": "Wolverine (Logan)",
+        "rank": 4,
+        "melee": 7,
+        "agility": 2,
+        "resilience": 5,
+        "vigilance": 4,
+        "ego": 1,
+        "logic": 1,
+        "image": "/img/wolverine.png",
+        "powers": {
+                "Basic": ["Brawling", "Combat Trickery", "Healing Factor", "Heightened Senses 1", "Iconic Weapon", "Reinforced Skeleton", "Uncanny 1"],
+                "Martial Arts": ["Attack Stance", "Grappling Technique"],
+                "Melee Weapons (Sharp)": ["Exploit", "Fast Attacks", "Focused Fury", "Furious Attacks", "Hit & Run", "Riposte", "Unstoppable Assault", "Vicious Attack", "Whirling Frenzy"]
+        },
+        "traits": ["Battle Ready", "Berserker", "Combat Expert", "Combat Reflexes", ["Connections", "Military"], "Situational Awareness", "Tech Reliance"],
+        "tags": ["Extreme Appearance", ["Enemy", "Sabretooth"], "Heroic", "Hounded", "Krakoan", "Public Identity", "X-Gene"],
+        "biography": {
+                "name": "James Howlett (a.k.a Logan)",
+                "height": "5'3\"",
+                "weight": "195 lbs. (300 lbs. with adamantium)",
+                "gender": "Male",
+                "eyes": "Blue",
+                "hair": "Black",
+                "size": "Average",
+                "features": "Retractable Adamantium Claws, Muttonchops",
+                "occupation": ["Military"],
+                "origin": ["High Tech: Cybernetics", "Mutant"],
+                "teams": "Avengers, Fantastic Four, X-Force, X-Men",
+                "base": "Krakoa, Summer House (the Blue Area of the Moon)",
+                "history": "Born in Canada in the late 1800s, James Howlett wandered the world under the name Logan. At one point, the Weapon X program captured him and bonded adamantium metal to his entire skeleton, including his retractable claws; his mutant healing factor enabled him to survive the experience. He escaped, but with large gaps in his memory.\nLogan later joined the X-Men and became a valued member of various X-teams. Over time, he recovered most of his memories. He was killed in recent years, but returned to life in time to help establish a new mutant nation on the island of Krakoa.",
+                "personality": "Logan can be cold-blooded and slow to trust others, but the restoration of his memory blunted those edges. He's still a no-nonsense man, but that's tempered with the wisdom age brings. After living as a loner for so long, he treasures his found family."
+        },
+        "iconicWeapon": "Adamantium Claws" 
+    },
+    {
+        "id": "hydra-agent-armored",
+        "name": "Armored Hydra Agent",
+        "rank": 4,
+        "melee": 2,
+        "agility": 6,
+        "resilience": 3,
+        "vigilance": 3,
+        "ego": 2,
+        "logic": 4,
+        "image": "/img/armored-hydra-agent.png",
+        "powers": {
+                "Basic": ["Accuracy 1", "Discipline 1", "Flight 2", "Mighty 1", "Sturdy 2"],
+                "Elemental Control (Energy)": ["Elemental Blast", "Elemental Burst"],
+                "Ranged Weapons": ["Covering Fire", "Double Tap", "Headshot", "Kill Zone", "Return Fire", "Snap Shooting", "Stopping Power", "Suppressive Fire", "Weapons Blazing"]
+        },
+        "traits": ["Battle Ready", "Combat Expert", "Combat Reflexes", ["Connections", "Military (Hydra)"], "Determination", "Extraordinary Origin", "Piloting", "Situational Awareness", "Tech Reliance"],
+        "tags": [["Extreme Appearance", "(in battle suit)"], "Secret Identity", "Villainous"],
+        "biography": {
+                "name": "Varies",
+                "height": "Varies",
+                "weight": "Varies",
+                "gender": "Varies",
+                "eyes": "Varies",
+                "hair": "Varies",
+                "size": "Average",
+                "features": "",
+                "occupation": ["Military"],
+                "origin": ["High Tech: Battle Suit", "Special Training"],
+                "teams": "Hydra",
+                "base": "Secret",
+                "history": "As a terrorist organization, Hydra uses most of its many recruits (Hydra Agents) as cannon fodder. But sometimes, Hydra will spend the resources upgrading an agent to be their tank on the battlefield. Hydra reverse-engineers the technology of heroes and villains, like Iron Man, War Machine, Iron Monger, Titanium Man and others, to create their own specialized armor. While this new armor may not be as dependable as those superbeings, it can still create a shock troop who can carry out the heaviest Hydra missions.",
+                "personality": "While Armored Hydra Agents remain anonymous members of the terrorist organization, they have an elevated status among their peers. Like all Hydra agents, they are fanatical, mean and merciless."
+        }   
+    },
+    {
+        "id": "hydra-agent",
+        "name": "Hydra Agent",
+        "rank": 1,
+        "melee": 1,
+        "agility": 1,
+        "resilience": 1,
+        "vigilance": 1,
+        "ego": 1,
+        "logic": 0,
+        "image": "/img/hydra-agent.png",
+        "powers": {
+                "Ranged Weapons": ["Double Tap", "Snap Shooting", "Suppressive Fire", "Weapons Blazing"]
+        },
+        "traits": ["Battle Ready", "Combat Reflexes", ["Connections", "Military (Hydra)"], "Determination", "Situational Awareness"],
+        "tags": ["Secret Identity", "Villainous"],
+        "biography": {
+                "name": "Varies",
+                "height": "Varies",
+                "weight": "Varies",
+                "gender": "Varies",
+                "eyes": "Varies",
+                "hair": "Varies",
+                "size": "Average",
+                "features": "The green-and-yellow Hydra Uniform",
+                "occupation": ["Military"],
+                "origin": ["Special Training"],
+                "teams": "Hydra",
+                "base": "Secret",
+                "history": "Hydra has reportedly been around in one form or another since the days of Ancient Egypt, and it’s evolved into one of the most dangerous criminal organizations on Earth. The latest incarnation sprang from the ruins of World War II-era Germany and Japan, and various factions of it have wavered back and forth between organized crime and fascist power.\nHydra recruits agents all around the world. In public, they know each other by secret signals and whispers of “Hail Hydra.” In secret, they don their green-and-yellow uniforms and chant the Hydra oath: “Hail, Hydra! Immortal Hydra! We shall never be destroyed! Cut off one head, two more shall take its place! We serve none but the Master—as the world shall soon serve us! Hail Hydra!”",
+                "personality": "Agents join Hydra for a number of reasons that usually boil down to money and power. They believe that Hydra can take over any organization or government, and they want to be on the winning side, no matter what they have to do to manage it. The Hydra uniform makes them mostly anonymous, fitting well with their oath to replace one fallen agent with two more just like them."
+        }
+    },
+    {
+        "id": "hydra-officer",
+        "name": "Hydra Officer",
+        "rank": 2,
+        "melee": 2,
+        "agility": 2,
+        "resilience": 2,
+        "vigilance": 2,
+        "ego": 2,
+        "logic": 0,
+        "image": "/img/hydra-officer.png",
+        "powers": {
+                "Basic": ["Combat Trickery", "Inspiration"],
+                "Ranged Weapons": ["Double Tap", "Snap Shooting", "Suppressive Fire", "Weapons Blazing"],
+                "Tactics": ["Battle Plan", "Keep Moving"]
+        },
+        "traits": ["Battle Ready", "Combat Expert", "Combat Reflexes", ["Connections", "Military (Hydra)"], "Determination", "Situational Awareness"],
+        "tags": ["Secret Identity", "Villainous"],
+        "biography": {
+                "name": "Varies",
+                "height": "Varies",
+                "weight": "Varies",
+                "gender": "Varies",
+                "eyes": "Varies",
+                "hair": "Varies",
+                "size": "Average",
+                "features": "The green-and-yellow Hydra Uniform",
+                "occupation": ["Military"],
+                "origin": ["Special Training"],
+                "teams": "Hydra",
+                "base": "Secret",
+                "history": "Hydra tends to treat its lowest-level recruits (Hydra Agents) as cannon fodder, foot soldiers who can be spent or lost without hesitation. After all, there never seems to be a lack of disaffected people looking to join up with the fascist organization to do their part for world domination. As the Hydra oath goes, “Cut off a limb and two more shall take its place!”\nThose agents who survive long enough—or are ambitious enough—find themselves promoted to positions of leadership within their hierarchical organization. Often they’re the leaders of independent cells sequestered from the rest of Hydra for operational security, and the fact that they’ve survived to that point means (at least to them) that they must be doing something right.",
+                "personality": "While Hydra agents like to follow orders, Hydra officers have developed a taste for giving them. They like to shout at their underlings and boss them around, and many of them harbor aspirations of one day becoming the Supreme Hydra themselves. They tend to be mean and merciless—to outsiders, to their subordinates and most especially to those they see as rivals. Many of them see the fact that they’ve risen in the ranks as the proof of their superiority, and because of this, they tend to be cocky as well."
+        }
+    }    
 ]

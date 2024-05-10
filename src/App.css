@@ -115,17 +115,26 @@ section img {
     margin-right: 10%;
 }
 
-.power-set-single {
-    font-size: x-small;
+.power-action {
+   font-size: smaller;
 }
 
 .power-trigger {
     margin-left: 10%;
     margin-right: 10%;
+    font-size: smaller;
 }
 
 .power-duration {
-    margin-top: 10px;
+    font-size: smaller;
+}
+
+.power-range {
+    font-size: smaller;
+}
+
+.power-cost {
+    font-size: smaller;
 }
 
 .power-effect {
@@ -153,6 +162,11 @@ section img {
     margin-top: 10px;
 }
 
+.trait {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 .trait-name {
     margin-bottom: 15px;
 }
@@ -165,6 +179,10 @@ section img {
     margin-top: 15px;
 }
 
+.marvel-tag {
+    margin-left: 10%;
+    margin-right: 10%;
+}
 
 .tag-description {
     margin-bottom: 10px;
@@ -183,7 +201,7 @@ section img {
 .bio-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 30px 30px 30px;
+    grid-template-rows: minmax(30px, max-content) minmax(30px, max-content) minmax(30px, max-content);
     margin-bottom: 10px;
     margin-top: 10px;
 }

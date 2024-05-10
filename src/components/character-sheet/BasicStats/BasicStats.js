@@ -110,7 +110,7 @@ export default function BasicStats() {
                         <div><i>Spider-Man's Vigilance is 3. Multiply that by 30 to determine his Focus, which is 90.</i></div>
                     </div>
                 </ClickRuleSplitTitle>
-                <ClickRuleMultipleInputs title={["Focus", `${character.focus} + `, <TextBox onSubmit={handleFocusSubmit}/>, , <button onClick={handleResetFocusClick}>Reset Focus</button>]} titleClass={"stats-input"}>
+                <ClickRuleMultipleInputs title={["Focus", `${character.focus} + `, <TextBox onSubmit={handleFocusSubmit}/>, <button onClick={handleResetFocusClick}>Reset Focus</button>]} titleClass={"stats-input"}>
                     <div className='subtitle'>Focus</div>
                     <p>If a character's Focus is reduced to 0, they are <i>demoralized</i>.</p>
                     <p>Any conditions  or powers they were concentrating on end immediately. While demoralized, they have trouble on all actions. If their Focus is reduced to a negative value equal in magnitude to their maximum Focus, or worse, they are <i>shattered</i>: frozen in place by fear and stress.</p>
@@ -190,7 +190,7 @@ export default function BasicStats() {
                 
                 <Speed />
                 <br />
-                <ClickRuleSplitTitle title={["Initiative Modifier", "+" + `${character.initModifier} ${character.initModifierEdge}`]}>
+                <ClickRuleSplitTitle title={["Initiative Modifier", `+${character.initModifier} ${character.initModifierEdge}`]}>
                     <div>
                         <div>A character's <i>Initiative Modifier</i> helps determine when they can act during combat. The higher the number, the more likely they are to go first.</div>
                         <div>A character's Initiative Modifier is equal to their Vigilance. If there's an E next to a character's Initiative Modifier, that means they have an edge on their initiative checks.</div>

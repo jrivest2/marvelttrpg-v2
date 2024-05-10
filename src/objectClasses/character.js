@@ -51,7 +51,7 @@ export default class Character {
     else if (this.health + value > this.maxHealth) this.health = this.maxHealth;
     else this.health += value;
 
-    if (this.health == startVal) return false;
+    if (this.health === startVal) return false;
     else return true;
    }
 
@@ -62,7 +62,7 @@ export default class Character {
     else if (this.focus + value > this.maxFocus) this.focus = this.maxFocus;
     else this.focus += value;
 
-    if (this.focus == startVal) return false;
+    if (this.focus === startVal) return false;
     else return true;
    }
 
@@ -81,7 +81,7 @@ export default class Character {
    }
 
    hasTag(tagName) {
-    const array = this.tags.filter(tag => tag.name == tagName)
+    const array = this.tags.filter(tag => tag.name === tagName)
     if (array.length < 1) return false;
     return true
    }
@@ -262,7 +262,6 @@ export default class Character {
 
    updatePowerStats() {
     const powersThatChangeStats = {
-        //Comments in this object are additional features that still need to be implemented.
         "Spider-Sense": () => {this.initModifierEdge = "E"; this.aDefense += 2},
         "Additional Limb": () => {this.meleeEdge = "E"; this.agilityEdge = "E"},
 
@@ -276,28 +275,28 @@ export default class Character {
         "Webgliding": () => {this.glideSpeed = this.runSpeed * 2},
         "Levitation": () => {this.levitateSpeed = this.runSpeed},
 
-        "Mighty 1": () => {this.addMeleeNonCombat(1); this.addMeleeDamageMultiplier(1)}, // Treat as 1 size bigger for throwing/lifting/carrying/swinging.
-        "Mighty 2": () => {this.addMeleeNonCombat(2); this.addMeleeDamageMultiplier(2)}, // Treat as 2 sizes bigger for throwing/lifting/carrying/swinging.
-        "Mighty 3": () => {this.addMeleeNonCombat(3); this.addMeleeDamageMultiplier(3)}, // Treat as 3 sizes bigger for throwing/lifting/carrying/swinging.
-        "Mighty 4": () => {this.addMeleeNonCombat(4); this.addMeleeDamageMultiplier(4)}, // Treat as 4 sizes bigger for throwing/lifting/carrying/swinging.
-        "Accuracy 1": () => {this.addAgiiltyNonCombat(1); this.addAgilityDamageMultiplier(1)},
-        "Accuracy 2": () => {this.addAgiiltyNonCombat(2); this.addAgilityDamageMultiplier(2)},
-        "Accuracy 3": () => {this.addAgiiltyNonCombat(3); this.addAgilityDamageMultiplier(3)},
-        "Accuracy 4": () => {this.addAgiiltyNonCombat(4); this.addAgilityDamageMultiplier(4)},
-        "Discipline 1": () => {this.addEgoNonCombat(1); this.addEgoDamageMultiplier(1)},
-        "Discipline 2": () => {this.addEgoNonCombat(2); this.addEgoDamageMultiplier(2)},
-        "Discipline 3": () => {this.addEgoNonCombat(3); this.addEgoDamageMultiplier(3)},
-        "Discipline 4": () => {this.addEgoNonCombat(4); this.addEgoDamageMultiplier(4)},
-        "Brilliance 1": () => {this.addLogicNonCombat(1); this.addLogicDamageMultiplier(1)},
-        "Brilliance 2": () => {this.addLogicNonCombat(2); this.addLogicDamageMultiplier(2)},
-        "Brilliance 3": () => {this.addLogicNonCombat(3); this.addLogicDamageMultiplier(3)},
-        "Brilliance 4": () => {this.addLogicNonCombat(4); this.addLogicDamageMultiplier(4)},
+        "Mighty 1": () => {if (1 + this.rank > this.meleeDamageMultiplier) {this.addMeleeNonCombat(1); this.addMeleeDamageMultiplier(1)}}, // Treat as 1 size bigger for throwing/lifting/carrying/swinging.
+        "Mighty 2": () => {if (2 + this.rank > this.meleeDamageMultiplier) {this.addMeleeNonCombat(2); this.addMeleeDamageMultiplier(2)}}, // Treat as 2 sizes bigger for throwing/lifting/carrying/swinging.
+        "Mighty 3": () => {if (3 + this.rank > this.meleeDamageMultiplier) {this.addMeleeNonCombat(3); this.addMeleeDamageMultiplier(3)}}, // Treat as 3 sizes bigger for throwing/lifting/carrying/swinging.
+        "Mighty 4": () => {if (4 + this.rank > this.meleeDamageMultiplier) {this.addMeleeNonCombat(4); this.addMeleeDamageMultiplier(4)}}, // Treat as 4 sizes bigger for throwing/lifting/carrying/swinging.
+        "Accuracy 1": () => {if (1 + this.rank > this.agilityDamageMultiplier) {this.addAgilityNonCombat(1); this.addAgilityDamageMultiplier(1)}},
+        "Accuracy 2": () => {if (2 + this.rank > this.agilityDamageMultiplier) {this.addAgilityNonCombat(2); this.addAgilityDamageMultiplier(2)}},
+        "Accuracy 3": () => {if (3 + this.rank > this.agilityDamageMultiplier) {this.addAgilityNonCombat(3); this.addAgilityDamageMultiplier(3)}},
+        "Accuracy 4": () => {if (4 + this.rank > this.agilityDamageMultiplier) {this.addAgilityNonCombat(4); this.addAgilityDamageMultiplier(4)}},
+        "Discipline 1": () => {if (1 + this.rank > this.egoDamageMultiplier) {this.addEgoNonCombat(1); this.addEgoDamageMultiplier(1)}},
+        "Discipline 2": () => {if (2 + this.rank > this.egoDamageMultiplier) {this.addEgoNonCombat(2); this.addEgoDamageMultiplier(2)}},
+        "Discipline 3": () => {if (3 + this.rank > this.egoDamageMultiplier) {this.addEgoNonCombat(3); this.addEgoDamageMultiplier(3)}},
+        "Discipline 4": () => {if (4 + this.rank > this.egoDamageMultiplier) {this.addEgoNonCombat(4); this.addEgoDamageMultiplier(4)}},
+        "Brilliance 1": () => {if (1 + this.rank > this.logicDamageMultiplier) {this.addLogicNonCombat(1); this.addLogicDamageMultiplier(1)}},
+        "Brilliance 2": () => {if (2 + this.rank > this.logicDamageMultiplier) {this.addLogicNonCombat(2); this.addLogicDamageMultiplier(2)}},
+        "Brilliance 3": () => {if (3 + this.rank > this.logicDamageMultiplier) {this.addLogicNonCombat(3); this.addLogicDamageMultiplier(3)}},
+        "Brilliance 4": () => {if (4 + this.rank > this.logicDamageMultiplier) {this.addLogicNonCombat(4); this.addLogicDamageMultiplier(4)}},
 
         //Iconic Weapon Combat Rules
-        "+1 Melee Damage Multiplier": () => {if (1 + this.rank > this.meleeDamageModifier) this.addMeleeDamageMultiplier(1)},
-        "+1 Agility Damage Multiplier": () => {if (1 + this.rank > this.agilityDamageModifier) this.addAgilityDamageMultiplier(1)},
-        "+1 Ego Damage Multiplier": () => {if (1 + this.rank > this.egoDamageModifier) this.addEgoDamageMultiplier(1)},
-        "+1 Logic Damage Multiplier": () => {if (1 + this.rank > this.logicDamageModifier) this.addLogicDamageMultiplier(1)},
+        "+1 Melee Damage Multiplier": () => {if (1 + this.rank > this.meleeDamageMultiplier) this.addMeleeDamageMultiplier(1)},
+        "+1 Agility Damage Multiplier": () => {if (1 + this.rank > this.agilityDamageMultiplier) this.addAgilityDamageMultiplier(1)},
+        "+1 Ego Damage Multiplier": () => {if (1 + this.rank > this.egoDamageMultiplier) this.addEgoDamageMultiplier(1)},
+        "+1 Logic Damage Multiplier": () => {if (1 + this.rank > this.logicDamageMultiplier) this.addLogicDamageMultiplier(1)},
 
         "Sturdy 1": () => {this.healthDamageReduction = 1},
         "Sturdy 2": () => {this.healthDamageReduction = 2},
@@ -334,16 +333,17 @@ export default class Character {
     if (this.hasBrawling && this.mDefense > this.aDefense) this.aDefense = this.mDefense;
    }
 
-   addMeleeNonCombat(value) { this.mNonCombat += value}
-   addAgiiltyNonCombat(value) { this.aNonCombat += value}
-   addResilienceNonCombat(value) { this.rNonCombat += value}
-   addVigilanceNonCombat(value) { this.vNonCombat += value}
-   addEgoNonCombat(value) { this.eNonCombat += value}
-   addLogicNonCombat(value) { this.lNonCombat += value}
-   addMeleeDamageMultiplier(value) {this.meleeDamageMultiplier += value}
-   addAgilityDamageMultiplier(value) {this.agilityDamageMultiplier += value}
-   addEgoDamageMultiplier(value) {this.egoDamageMultiplier += value}
-   addLogicDamageMultiplier(value) {this.logicDamageMultiplier += value}
+   addMeleeNonCombat(value) { this.mNonCombat = this.melee + value}
+   addAgilityNonCombat(value) { this.aNonCombat = this.agility + value}
+   addResilienceNonCombat(value) { this.rNonCombat = this.resilience + value}
+   addVigilanceNonCombat(value) { this.vNonCombat = this.vigilance + value}
+   addEgoNonCombat(value) { this.eNonCombat = this.ego + value}
+   addLogicNonCombat(value) { this.lNonCombat = this.logic + value}
+   
+   addMeleeDamageMultiplier(value) {this.meleeDamageMultiplier = this.rank + value}
+   addAgilityDamageMultiplier(value) {this.agilityDamageMultiplier = this.rank + value}
+   addEgoDamageMultiplier(value) {this.egoDamageMultiplier = this.rank + value}
+   addLogicDamageMultiplier(value) {this.logicDamageMultiplier = this.rank + value}
 
 
    getData() {

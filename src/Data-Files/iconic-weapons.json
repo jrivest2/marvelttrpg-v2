@@ -1,5 +1,23 @@
 [
     {
+        "name": "Adamantium Claws",
+        "combatRules": ["+1 Melee Damage Multiplier"],
+        "narrativeRules": [],
+        "integrated": [2, ""]
+    },
+    {
+        "name": "Captain America's Shield",
+        "combatRules": ["+1 Melee Damage Multiplier", "+1 Agility Damage Multiplier", "Grants the User one extra level of the power Shield, up to Shield 4."],
+        "narrativeRules": [],
+        "integrated": [1, "The multipliers have been integrated, but bumping 1 level for the Shield power has not been integrated. You'll have to keep track of that on your own."]
+    },
+    {
+        "name": "Element Gun",
+        "combatRules": [],
+        "narrativeRules": ["Can pick elemental effect from air, earth, fire, water, or energy", "returns when summoned"],
+        "integrated": [0, ""]
+    },
+    {
         "name": "Mjolnir",
         "combatRules": ["+1 Melee Damage Multiplier", "+1 Agility Damage Multiplier"],
         "narrativeRules":  ["Returns to thrower.", "Can only be wielded by the worthy."],

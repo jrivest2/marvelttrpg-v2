@@ -2,7 +2,7 @@ export default function PowerClickBody({power, subPower}) {
     
     const output = Object.entries(power).map((item, index) => {
         const [name, value] = item;
-        if (value.length !=0) {
+        if (value.length !== 0) {
             const powerIsIconicWeapon = value.includes("Iconic Weapon") ? true : false;
             switch(name) {
                 case "name":
@@ -32,7 +32,7 @@ export default function PowerClickBody({power, subPower}) {
                     return <div key={index} className="power-effect">{effectOutput}</div>;
                 case "integrated":
                     switch(value[0]) {
-                        case 0:
+                        default:
                             return <div key={index} className="power-integrated">This power's effects have <b>NOT</b> yet been integrated into the website. You will need to keep track of its effects on your own.</div>;
                         case 1:
                             return <div key={index} className="power-integrated">This power's effects have been <b>PARTIALLY</b> integrated into the website. {value[1]}</div>;
@@ -47,8 +47,13 @@ export default function PowerClickBody({power, subPower}) {
                 case "narrativeRules":
                     const narrativeRulesOutput = value.map((rule, index2) => {return <div key={index2} className="iconic-weapon-rule">{rule}</div>});
                     return <div key={index} className="iconic-weapon-narrative-rules"><b>Narrative Rules</b>: {narrativeRulesOutput}</div>
+                default:
+                    return {};
             }
-        }
+
+            // if Iconic Weapon (power without a summary), still put a little space between the name and the stats
+        } else if (name === "summary") return <div className="power-summary" key={index}></div>
+        return {};
     })
     
     const passiveNote = (power.duration === "Permanent") ? <div><br /><div className="passive superscript">**Powers marked in Red are Passive Powers.**</div> <div className="passive superscript">These powers do not have Action Types, but rather, they act as permenant stat buffs.</div></div> : "";
