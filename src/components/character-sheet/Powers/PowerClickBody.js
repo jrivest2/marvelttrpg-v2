@@ -48,12 +48,12 @@ export default function PowerClickBody({power, subPower}) {
                     const narrativeRulesOutput = value.map((rule, index2) => {return <div key={index2} className="iconic-weapon-rule">{rule}</div>});
                     return <div key={index} className="iconic-weapon-narrative-rules"><b>Narrative Rules</b>: {narrativeRulesOutput}</div>
                 default:
-                    return {};
+                    return <></>;
             }
 
             // if Iconic Weapon (power without a summary), still put a little space between the name and the stats
         } else if (name === "summary") return <div className="power-summary" key={index}></div>
-        return {};
+        return <></>;
     })
     
     const passiveNote = (power.duration === "Permanent") ? <div><br /><div className="passive superscript">**Powers marked in Red are Passive Powers.**</div> <div className="passive superscript">These powers do not have Action Types, but rather, they act as permenant stat buffs.</div></div> : "";
